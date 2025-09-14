@@ -1,0 +1,6 @@
+theme: minima
+plugins:
+  - jekyll-katex
+katex:
+  render_options:
+    throw_on_error: false
