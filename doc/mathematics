@@ -1,0 +1,54 @@
+Verification of Core Components
+
+Domain and Kleene Operations:
+
+The domain T = {-1, 0, 1} (FALSE, UNKNOWN, TRUE) is standard for strong Kleene logic.
+Operations (¬a = -a, ∧ = min, ∨ = max, ↔ = a × b) are consistent:
+
+Negation: -(-1) = 1, -(0) = 0, -(1) = -1, preserving the ternary domain.
+Conjunction (min): min(0, -1) = -1, min(0, 1) = 0, min(0, 0) = 0, matching absorption properties.
+Disjunction (max): max(0, -1) = 0, max(0, 1) = 1, max(0, 0) = 0, as expected.
+Equivalence (a × b): Maps to {-1, 0, 1} (e.g., 1 × 1 = 1, -1 × -1 = 1, 0 × anything = 0), which is a valid extension, though not standard in Kleene logic but consistent here.
+
+Recursive Form:
+
+The recursive definition ℛ(φ, x⃗) is well-formed:
+
+Base case: ℛ(φ, xₙ) = xₙ for n = 1.
+Recursive case: ℛ(φ, ⟨x₁, ..., xₙ⟩) = φ(x₁, ℛ(φ, ⟨x₂, ..., xₙ⟩)) for n > 1.
+This is a left-associative fold, ensuring deterministic evaluation.
+
+For ∧ᵣ: min(x₁, min(x₂, ...)) computes the global minimum.
+For ∨ᵣ: max(x₁, max(x₂, ...)) computes the global maximum.
+For ¬ᵣ: Applied recursively, it negates only the first element (due to φ(a, b) = -a), which is consistent but implies ¬ᵣ is unary in practice.
+
+UNKNOWN Preservation Theorem:
+
+The theorem ℛ(φ, ⟨0, x₂, ..., xₙ⟩) = 0 ⟺ ∄ xᵢ : (φ = ∧ᵣ ∧ xᵢ = -1) ∨ (φ = ∨ᵣ ∧ xᵢ = 1) holds:
+
+For ∧ᵣ: min(0, ℛ(∧ᵣ, ⟨x₂, ..., xₙ⟩)) = 0 unless ℛ(∧ᵣ, ⟨x₂, ..., xₙ⟩) = -1, which requires some xᵢ = -1 (i ≥ 2). If no xᵢ = -1, the result is 0 (UNKNOWN).
+For ∨ᵣ: max(0, ℛ(∨ᵣ, ⟨x₂, ..., xₙ⟩)) = 0 unless ℛ(∨ᵣ, ⟨x₂, ..., xₙ⟩) = 1, which requires some xᵢ = 1. If no xᵢ = 1, the result is 0.
+
+The theorem correctly captures that UNKNOWN persists unless a definitive value (FALSE for ∧, TRUE for ∨) forces a change.
+
+Confidence Propagation:
+
+For ∧ᵣ: ∏ cᵢ (product of confidences) is standard for independent conjunctive events.
+For ∨ᵣ: 1 - ∏ (1 - cᵢ) is the probabilistic OR (inclusion-exclusion), assuming independence.
+For ¬ᵣ: c₁ is preserved, consistent with a unary operation.
+The decay model C(n) = ∏ cᵢ for ∧ᵣ is reasonable, and low confidence pushing toward UNKNOWN is intuitive.
+
+State Transition and Fixed Point:
+
+The state transition S(t+1) = Φ(S(t), I(t)) is a valid dynamic system.
+UNKNOWN as a quasi-absorbing state is correct:
+
+Φ(0, x) = 0 unless x forces a change (x = -1 for ∧, x = 1 for ∨).
+
+The probability P(UNKNOWN|n) ≈ (2/3)ⁿ assumes uniform random inputs {-1, 0, 1}. For ∧ᵣ, the result is 0 unless any input is -1 (1/3 chance per input), and for ∨ᵣ, unless any input is 1 (1/3 chance). The approximation holds as the probability of avoiding absorbing states decreases exponentially.
+
+Computational Complexity:
+
+Time: O(n) with early termination (e.g., FALSE for ∧ᵣ, TRUE for ∨ᵣ) is correct, as evaluation can stop once an absorbing state is reached.
+Space: O(1) with tail recursion is achievable in optimized implementations.
+The (2/3)ⁿ probability for UNKNOWN propagation aligns with the random input model.
