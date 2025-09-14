@@ -4,6 +4,8 @@ By H. Overman ([opsec.ee@pm.me](mailto:opsec.ee@pm.me)) © 2025
 
 This system extends strong Kleene logic to recursively process ternary truth values **T = {-1, 0, 1}** (FALSE, UNKNOWN, TRUE) with confidence propagation, preserving uncertainty unless logically required. It is efficient (**O(n)** time, **O(1)** space) and applicable to AI, sensor fusion, and decision-making.
 
+RTKA-U’s ternary logic and confidence propagation enable services that require robust handling of uncertainty, incomplete data, or probabilistic reasoning.
+
 <h2>Mathematical Formulation</h2>
 <div align="center">
   <img src="https://github.com/opsec-ee/rtka-u/blob/main/images/rtka-u.png" alt="RTKA-U Mathematical Formulations" />
