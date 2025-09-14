@@ -1,43 +1,4 @@
-<script type="text/javascript">
-        var gk_isXlsx = false;
-        var gk_xlsxFileLookup = {};
-        var gk_fileData = {};
-        function filledCell(cell) {
-          return cell !== '' && cell != null;
-        }
-        function loadFileData(filename) {
-        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
-            try {
-                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
-                var firstSheetName = workbook.SheetNames[0];
-                var worksheet = workbook.Sheets[firstSheetName];
-
-                // Convert sheet to JSON to filter blank rows
-                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
-                // Filter out blank rows (rows where all cells are empty, null, or undefined)
-                var filteredData = jsonData.filter(row => row.some(filledCell));
-
-                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
-                var headerRowIndex = filteredData.findIndex((row, index) =>
-                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
-                );
-                // Fallback
-                if (headerRowIndex === -1 || headerRowIndex > 25) {
-                  headerRowIndex = 0;
-                }
-
-                // Convert filtered JSON back to CSV
-                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
-                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
-                return csv;
-            } catch (e) {
-                console.error(e);
-                return "";
-            }
-        }
-        return gk_fileData[filename] || "";
-        }
-        </script><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,14 +7,16 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
         h1, h2 { color: #333; }
-        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; }
-        .math { font-size: 1.2em; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        code { font-size: 0.9em; }
+        .math { font-size: 1.2em; margin: 10px 0; }
+        a { color: #0066cc; }
     </style>
 </head>
 <body>
-    <h1>Recursive Ternary with Kleene Algorithm + UNKNOWN (RTKA-U)</h1>
+    <h1>Recursive Ternary with Kleene Algorithm + UNKNOWN</h1>
     <p>By H. Overman (<a href="mailto:opsec.ee@pm.me">opsec.ee@pm.me</a>) &copy; 2025</p>
     <p>This system extends strong Kleene logic to recursively process ternary truth values \(\mathbb{T} = \{-1, 0, 1\}\) (FALSE, UNKNOWN, TRUE) with confidence propagation, preserving uncertainty unless logically required. It is efficient (\(\mathcal{O}(n)\) time, \(\mathcal{O}(1)\) space) and applicable to AI, sensor fusion, and decision-making.</p>
 
@@ -114,7 +77,17 @@ def recursive_ternary(operation, inputs, confidences=None):
     if operation == kleene_or and inputs[0] == 1:
         return 1, confidence_or(confidences) if confidences else None
     
-    tail_result, tail_confidence = recursive_ternary(operation, inputs[1:], confidences[1:] if confidences else None) if confidences else (recursive_ternary(operation, inputs[1:]), None)
+    # Recursive step with confidence handling
+    if confidences:
+        tail_result, tail_confidence = recursive_ternary(
+            operation, 
+            inputs[1:], 
+            confidences[1:] if confidences else None
+        )
+    else:
+        tail_result = recursive_ternary(operation, inputs[1:])
+        tail_confidence = None
+    
     result = operation(inputs[0], tail_result)
     
     if confidences:
