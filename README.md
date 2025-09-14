@@ -27,8 +27,14 @@ examples in [`rtka_u_algorithm`](code/rtka_u_improved.py)
 
 ## Resources
 
-- [Source Code](ternary_logic.py)
-- [GitHub Repository](https://github.com/yourusername/rtka-u)
+- [Source Code](rtka_u_improved.py)
+- [GitHub Repository](https://github.com/opsec-ee/rtka-u)
 - [arXiv Paper](https://arxiv.org/abs/XXXX.XXXXX) (forthcoming)
 
 For feedback or collaboration, contact <opsec.ee@pm.me>.
+
+## License
+
+This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License - see the [LICENSE](LICENSE) file for details.
+
+For commercial licensing, please contact opsec.ee@pm.me
