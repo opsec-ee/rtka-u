@@ -27,4 +27,4 @@ In decision systems, belief propagation in three-valued logic (2022) supports AI
 #### Gaps and RTKA-U's Contribution
 While foundational works like Kleene (1952) and multi-valued logics (Fitting, 1991) establish ternary systems, they lack integrated recursive confidence propagation for decision chains. Recent AI applications (e.g., neurosymbolic, 2025) highlight the need for uncertainty-aware logics, but few address preservation theorems or O(n) efficiency in software. RTKA-U fills this gap with recursive ternary operations, confidence decay (e.g., AND product), and UNKNOWN preservation, validated empirically (e.g., (2/3)^{n-1} probability).
 
-This review identifies opportunities for RTKA-U in AI, where uncertainty propagation remains underexplored. Future work could extend to fuzzy-neutrosophic hybrids.
+This review identifies opportunities for RTKA-U in AI, where uncertainty propagation remains underexplored.
