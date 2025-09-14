@@ -15,8 +15,8 @@ This system extends strong Kleene logic to recursively process ternary truth val
 
 ## Implementation
 
-examples in [`rtka_u_algorithm`](code/rtka_u_algorithm.py)
-            [`test_rtka_u`](code/test_rtka_u.py)
+examples in [`rtka_u_algorithm`](code/rtka_u_improved.py)
+            [`rtka_u_test`](code/test_rtka_u_improved.py)
 
 ## Test cases (Python):
 
