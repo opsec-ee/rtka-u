@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
-Comprehensive Test and Visualization Suite for RTKA-U Improved (v1.2.2)
-Combines testing with chart generation to validate the algorithm.
+Test and Visualization Suite for RTKA-U
+
+Author: H.Overman <opsec.ee@pm.me>
+Version: 1.2.2
 """
 
 import sys
