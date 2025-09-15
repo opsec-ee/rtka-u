@@ -23,7 +23,7 @@ RTKA-U’s ternary logic and confidence propagation enable services that require
 ## Implementation
 
 examples in [`rtka_u_algorithm`](code/rtka_u_improved.py)
-            [`rtka_u_test`](code/test_rtka_u_improved.py)
+            [`rtka_u_test`](code/test_rtka_improved.py)
 
 ## Test cases (Python):
 
