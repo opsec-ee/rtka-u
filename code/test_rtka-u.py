@@ -8,7 +8,7 @@ Version: 1.2.2
 
 import sys
 import time
-from rtka_u_improved import (
+from rtka_u import (
     TruthValue, LogicExpression, RTKAEvaluator, 
     And, Or, Not, Var
 )
