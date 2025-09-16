@@ -1,7 +1,7 @@
 /**
  * rtka-u.c
  * Recursive Ternary with Kleene Algorithm + UNKNOWN
- * Implementation file
+ * Implementation in C
  * Auther: H.Overman <opsec.ee@pm.me>
  */
 
