@@ -1,5 +1,7 @@
-# rtka-u example usage python3
-# Author: H.Overman <opsec.ee@pm.me
+# rtka-u.py
+# Recursive Ternary with Kleene Algorithm + UNKNOWN
+# Implementation in Python
+# Author: H.Overman <opsec.ee@pm.me>
 
 def kleene_and(a, b):
     return min(a, b)
