@@ -1,3 +1,6 @@
+# rtka-u example usage python3
+# Author: H.Overman <opsec.ee@pm.me
+
 def kleene_and(a, b):
     return min(a, b)
 
