@@ -1,7 +1,7 @@
 /**
  * rtka-u.h
  * Recursive Ternary with Kleene Algorithm + UNKNOWN
- * Auther: H.Overman <opsec.ee@pm.me>
+ * Author: H.Overman <opsec.ee@pm.me>
  */
 
 #ifndef RTKA_U_H
