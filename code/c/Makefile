@@ -1,4 +1,5 @@
 # Makefile for RTKA-U
+# Auther: H.Overman <opsec.ee@pm.me>
 
 CC = gcc
 CFLAGS = -O2 -Wall -Wextra -std=c11
