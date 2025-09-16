@@ -1,0 +1,15 @@
+/**
+ * rtka-u_test.h
+ * Test suite header for RTKA-U
+ */
+
+#ifndef RTKA_U_TEST_H
+#define RTKA_U_TEST_H
+
+/* Test functions */
+void test_basic_operations(void);
+void test_sensor_fusion(void);
+void test_evidence_chaining(void);
+void test_unknown_persistence(void);
+
+#endif /* RTKA_U_TEST_H */
