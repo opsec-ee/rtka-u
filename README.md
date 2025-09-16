@@ -13,17 +13,13 @@ RTKA-U’s ternary logic and confidence propagation enable services that require
 
 ## Implementation
 
-examples in [`rtka_u - Python`](code/)
-            [`rtka-u - C code`](code/c)
+[`rtka_u in Python`](code/) \
+[`rtka-u in C code`](code/c)
 
-## Test cases (Python):
-
-- AND: [0, 1, -1], confidences [0.8, 0.9, 0.7] → -1, 0.504
-- OR: [0, -1, 1], confidences [0.8, 0.9, 0.7] → 1, 0.964
 
 ## Resources
 
-- [Source Code](code/rtka_u_improved.py)
+- [Source Code](code/)
 - [GitHub Repository](https://github.com/opsec-ee/rtka-u)
 - [arXiv Paper](https://arxiv.org/abs/XXXX.XXXXX) (forthcoming)
 
@@ -31,6 +27,7 @@ For feedback or collaboration, contact <opsec.ee@pm.me>.
 
 ## License
 
-This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License \
+see the [LICENSE](LICENSE) file for details.
 
 For commercial licensing, please contact opsec.ee@pm.me
