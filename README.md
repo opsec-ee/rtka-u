@@ -1,4 +1,4 @@
-# Recursive Ternary with Kleene Algorithm + UNKNOWN (RTKA-U)
+## Recursive Ternary with Kleene Algorithm + UNKNOWN (RTKA-U)
 
 By H. Overman ([opsec.ee@pm.me](mailto:opsec.ee@pm.me)) © 2025
 
