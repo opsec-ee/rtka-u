@@ -11,15 +11,6 @@ RTKA-U’s ternary logic and confidence propagation enable services that require
   <img src="https://github.com/opsec-ee/rtka-u/blob/main/images/rtka-u.png" alt="RTKA-U Mathematical Formulations" />
 </div>
 
-<h2>unknown_propagations</h2>
-<div align="center">
-<img src="https://github.com/opsec-ee/rtka-u/blob/main/images/unknown_propagation.png" alt="UNKNOWN Propagation Plot" style="max-width: 100%;">
-</div>
-<h2>confidence_decay</h2>
-<div align="center">
-<img src="https://github.com/opsec-ee/rtka-u/blob/main/images/confidence_decay.png" alt="UNKNOWN Propagation Plot" style="max-width: 100%;">
-</div>
-
 ## Implementation
 
 examples in [`rtka_u - Python`](code/)
