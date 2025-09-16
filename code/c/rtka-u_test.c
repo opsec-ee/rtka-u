@@ -1,6 +1,7 @@
 /**
  * rtka-u_test.c
  * Test suite for RTKA-U
+ * Auther: H.Overman <opsec.ee@pm.me>
  */
 
 #include <stdio.h>
