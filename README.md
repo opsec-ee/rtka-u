@@ -14,7 +14,7 @@ RTKA-U’s ternary logic and confidence propagation enable services that require
 ## Implementation
 
 [`rtka-u in C code`](code/c) \
-[`rtka-u in Python`](code/py) \
+[`rtka-u in Python`](code/py)
 
 ## Resources
 
