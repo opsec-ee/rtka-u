@@ -2,6 +2,7 @@
  * rtka-u.c
  * Recursive Ternary with Kleene Algorithm + UNKNOWN
  * Implementation file
+ * Auther: H.Overman <opsec.ee@pm.me>
  */
 
 #include "rtka-u.h"
