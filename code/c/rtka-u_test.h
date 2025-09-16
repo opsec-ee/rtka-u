@@ -1,6 +1,7 @@
 /**
  * rtka-u_test.h
  * Test suite header for RTKA-U
+ * Auther: H.Overman <opsec.ee@pm.me>
  */
 
 #ifndef RTKA_U_TEST_H
