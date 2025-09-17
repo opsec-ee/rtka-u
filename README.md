@@ -1,4 +1,6 @@
-## Recursive Ternary with Kleene Algorithm + UNKNOWN (RTKA-U)
+## Recursive Ternary with Kleene Algorithm + UNKNOWN (RTKA-U) \
+
+[![DOI](https://zenodo.org/badge/1056690221.svg)](https://doi.org/10.5281/zenodo.17137874) 
 
 By H. Overman ([opsec.ee@pm.me](mailto:opsec.ee@pm.me)) © 2025
 
@@ -8,14 +10,13 @@ RTKA-U’s ternary logic and confidence propagation enable services that require
 
 <h2>Mathematical Formulation</h2>
 <div align="center">
-  <img src="https://github.com/opsec-ee/rtka-u/blob/main/images/rtka-u.png" alt="RTKA-U Mathematical Formulations" />
+  <img src="https://github.com/opsec-ee/rtka-u/blob/main/images/rtka_u-v3.png" alt="RTKA-U Mathematical Formulations" />
 </div>
 
 ## Implementation
 
-[`rtka_u in Python`](code/) \
-[`rtka-u in C code`](code/c)
-
+[`rtka-u in C code`](code/c) \
+[`rtka-u in Python`](code/py)
 
 ## Resources
 
