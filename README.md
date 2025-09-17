@@ -1,6 +1,7 @@
 ## Recursive Ternary with Kleene Algorithm + UNKNOWN (RTKA-U) \
 
-[![DOI](https://zenodo.org/badge/1056690221.svg)](https://doi.org/10.5281/zenodo.17137874) 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17148691.svg)](https://doi.org/10.5281/zenodo.17148691)
+
 
 By H. Overman ([opsec.ee@pm.me](mailto:opsec.ee@pm.me)) © 2025
 
