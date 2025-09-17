@@ -20,7 +20,7 @@ RTKA-U’s ternary logic and confidence propagation enable services that require
 
 ## Resources
 
-- [Source Code](code/)
+- [Documentation](doc/rtka-u.pdf)
 - [GitHub Repository](https://github.com/opsec-ee/rtka-u)
 - [arXiv Paper](https://arxiv.org/abs/XXXX.XXXXX) (forthcoming)
 
