@@ -1,4 +1,4 @@
-## (RTKA-U) Recursive Ternary with Kleene Algorithm + UNKNOWN  \
+## (RTKA-U) Recursive Ternary with Kleene Algorithm + UNKNOWN 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17148691.svg)](https://doi.org/10.5281/zenodo.17148691)
 
