@@ -19,7 +19,7 @@ RTKA-U’s ternary logic and confidence propagation enable services that require
 [`rtka-u in C code`](code/c) - Main \
 [`rtka-u in Python`](code/py) - Proof
 
-RTKA-U is **not** like any existing system. [`Here's how it's fundamentally different`](code/c)
+RTKA-U is **not** like any existing system. [`Here's how it's fundamentally different`](doc/papers/rtka-u_markdown.md)
 
 
 ## Resources
