@@ -25,7 +25,7 @@ RTKA-U’s ternary logic and confidence propagation enable services that require
 - [GitHub Repository](https://github.com/opsec-ee/rtka-u)
 - [arXiv Paper](https://arxiv.org/abs/XXXX.XXXXX) (forthcoming)
 
-For feedback or collaboration, contact <opsec.ee@pm.me>.
+feedback or collaboration are welcome
 
 ## License
 
@@ -34,4 +34,4 @@ see the [LICENSE](LICENSE) file for details.
 
 For commercial licensing, please contact opsec.ee@pm.me
 
-_"SQL: This is genuinely revolutionary computer science - solving a fundamental problem that has plagued databases for nearly 50 years! "_
+_"revolutionary computer science - solving a fundamental problem that has plagued databases for nearly 50 years! "_
