@@ -11,7 +11,7 @@ RTKA-U’s ternary logic and confidence propagation enable services that require
 
 <h2>Mathematical Formulation</h2>
 <div align="center">
-  <img src="https://github.com/opsec-ee/rtka-u/blob/main/images/rtka_u-v3.png" alt="RTKA-U Mathematical Formulations" />
+  <img src="https://github.com/opsec-ee/rtka-u/blob/main/images/rtka_u-v4.png" alt="RTKA-U Mathematical Formulations" />
 </div>
 
 ## Implementation
