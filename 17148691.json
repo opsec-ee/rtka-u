@@ -1,0 +1,295 @@
+{
+  "access": {
+    "embargo": {
+      "active": false,
+      "reason": null
+    },
+    "files": "public",
+    "record": "public",
+    "status": "open"
+  },
+  "created": "2025-09-17T23:48:32.519677+00:00",
+  "custom_fields": {
+    "code:codeRepository": "https://github.com/opsec-ee/rtka-u",
+    "code:developmentStatus": {
+      "id": "active",
+      "title": {
+        "en": "Active"
+      }
+    },
+    "code:programmingLanguage": [
+      {
+        "id": "c",
+        "title": {
+          "en": "C"
+        }
+      }
+    ]
+  },
+  "deletion_status": {
+    "is_deleted": false,
+    "status": "P"
+  },
+  "files": {
+    "count": 3,
+    "enabled": true,
+    "entries": {
+      "rtka-u-1.1.0.tar.gz": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:7b159f17ea7489ae688c150e6d1994cf",
+        "ext": "gz",
+        "id": "0dbf2a5e-0d55-41a0-a028-d6796209dfa4",
+        "key": "rtka-u-1.1.0.tar.gz",
+        "links": {
+          "content": "https://zenodo.org/api/records/17148691/files/rtka-u-1.1.0.tar.gz/content",
+          "self": "https://zenodo.org/api/records/17148691/files/rtka-u-1.1.0.tar.gz"
+        },
+        "metadata": {},
+        "mimetype": "application/gzip",
+        "size": 416038,
+        "storage_class": "L"
+      },
+      "rtka-u-1.1.0.zip": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:549262d608db6d4dd1c7bca46162a223",
+        "ext": "zip",
+        "id": "e0bc9178-f776-4a26-a8e3-ba5e9f18119c",
+        "key": "rtka-u-1.1.0.zip",
+        "links": {
+          "content": "https://zenodo.org/api/records/17148691/files/rtka-u-1.1.0.zip/content",
+          "self": "https://zenodo.org/api/records/17148691/files/rtka-u-1.1.0.zip"
+        },
+        "metadata": {},
+        "mimetype": "application/zip",
+        "size": 423497,
+        "storage_class": "L"
+      },
+      "rtka-u.pdf": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:7185dd48f03229f24b7bd0ed0c8a71ae",
+        "ext": "pdf",
+        "id": "f74051e3-be03-43e0-94f0-76b452ab73cb",
+        "key": "rtka-u.pdf",
+        "links": {
+          "content": "https://zenodo.org/api/records/17148691/files/rtka-u.pdf/content",
+          "iiif_api": "https://zenodo.org/api/iiif/record:17148691:rtka-u.pdf/full/full/0/default.png",
+          "iiif_base": "https://zenodo.org/api/iiif/record:17148691:rtka-u.pdf",
+          "iiif_canvas": "https://zenodo.org/api/iiif/record:17148691/canvas/rtka-u.pdf",
+          "iiif_info": "https://zenodo.org/api/iiif/record:17148691:rtka-u.pdf/info.json",
+          "self": "https://zenodo.org/api/records/17148691/files/rtka-u.pdf"
+        },
+        "metadata": {
+          "height": 842,
+          "width": 595
+        },
+        "mimetype": "application/pdf",
+        "size": 316655,
+        "storage_class": "L"
+      }
+    },
+    "order": [],
+    "total_bytes": 1156190
+  },
+  "id": "17148691",
+  "is_draft": false,
+  "is_published": true,
+  "links": {
+    "access": "https://zenodo.org/api/records/17148691/access",
+    "access_grants": "https://zenodo.org/api/records/17148691/access/grants",
+    "access_links": "https://zenodo.org/api/records/17148691/access/links",
+    "access_request": "https://zenodo.org/api/records/17148691/access/request",
+    "access_users": "https://zenodo.org/api/records/17148691/access/users",
+    "archive": "https://zenodo.org/api/records/17148691/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17148691/media-files-archive",
+    "communities": "https://zenodo.org/api/records/17148691/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17148691/communities-suggestions",
+    "doi": "https://doi.org/10.5281/zenodo.17148691",
+    "draft": "https://zenodo.org/api/records/17148691/draft",
+    "files": "https://zenodo.org/api/records/17148691/files",
+    "latest": "https://zenodo.org/api/records/17148691/versions/latest",
+    "latest_html": "https://zenodo.org/records/17148691/latest",
+    "media_files": "https://zenodo.org/api/records/17148691/media-files",
+    "parent": "https://zenodo.org/api/records/17148690",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17148690",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17148690",
+    "parent_html": "https://zenodo.org/records/17148690",
+    "preview_html": "https://zenodo.org/records/17148691?preview=1",
+    "requests": "https://zenodo.org/api/records/17148691/requests",
+    "reserve_doi": "https://zenodo.org/api/records/17148691/draft/pids/doi",
+    "self": "https://zenodo.org/api/records/17148691",
+    "self_doi": "https://doi.org/10.5281/zenodo.17148691",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17148691",
+    "self_html": "https://zenodo.org/records/17148691",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17148691/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17148691/sequence/default",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:17148691:rtka-u.pdf/full/%5E10,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:17148691:rtka-u.pdf/full/%5E100,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:17148691:rtka-u.pdf/full/%5E1200,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:17148691:rtka-u.pdf/full/%5E250,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:17148691:rtka-u.pdf/full/%5E50,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:17148691:rtka-u.pdf/full/%5E750,/0/default.jpg"
+    },
+    "versions": "https://zenodo.org/api/records/17148691/versions"
+  },
+  "media_files": {
+    "count": 1,
+    "enabled": true,
+    "entries": {
+      "rtka-u.pdf.ptif": {
+        "access": {
+          "hidden": true
+        },
+        "ext": "ptif",
+        "id": "35b11ac5-a5be-4010-a171-aa32e201702b",
+        "key": "rtka-u.pdf.ptif",
+        "links": {
+          "content": "https://zenodo.org/api/records/17148691/files/rtka-u.pdf.ptif/content",
+          "self": "https://zenodo.org/api/records/17148691/files/rtka-u.pdf.ptif"
+        },
+        "metadata": null,
+        "mimetype": "application/octet-stream",
+        "processor": {
+          "source_file_id": "f74051e3-be03-43e0-94f0-76b452ab73cb",
+          "status": "finished",
+          "type": "image-tiles"
+        },
+        "size": 0,
+        "storage_class": "L"
+      }
+    },
+    "order": [],
+    "total_bytes": 0
+  },
+  "metadata": {
+    "copyright": "Copyright (c) 2025 - H.Overman",
+    "creators": [
+      {
+        "person_or_org": {
+          "family_name": "H.Overman",
+          "name": "H.Overman",
+          "type": "personal"
+        },
+        "role": {
+          "id": "researcher",
+          "title": {
+            "de": "WissenschaftlerIn",
+            "en": "Researcher"
+          }
+        }
+      }
+    ],
+    "dates": [
+      {
+        "date": "2025-09-17",
+        "description": "further detailed",
+        "type": {
+          "id": "updated",
+          "title": {
+            "de": "Aktualisiert",
+            "en": "Updated"
+          }
+        }
+      }
+    ],
+    "description": "<div>\n<p>Recursive Ternary with Kleene Algorithm + UNKNOWN (RTKA-U)</p>\n<p><em>High-performance three-valued logic with confidence propagation for uncertainty reasoning</em></p>\n<p>Abstract:</p>\n<p>RTKA-U is a novel algorithmic approach to three-valued logic computation with integrated confidence propagation mechanisms. Building upon Kleene's ternary logic foundations, the algorithm introduces sophisticated uncertainty reasoning capabilities through recursive evaluation structures and probabilistic confidence measures.</p>\n<p>Key Features:</p>\n<p>Ternary Logic Operations: Implements Kleene AND (min), OR (max), NOT (negation), and equivalence operations using efficient branch-free arithmetic<br>Confidence Propagation: Mathematical formulas for uncertainty quantification through logical operations (AND: multiplicative, OR: complementary product)<br>Early Termination Optimization: Intelligent short-circuit evaluation achieving 40-60% performance improvement in average cases<br>UNKNOWN Persistence Analysis: Theoretical foundation with proven statistical behavior following (2/3)^(n-1) probability distribution<br>Recursive Tree Evaluation: Hierarchical logical expression processing with confidence threshold management</p>\n<p>Technical Implementation:</p>\n<p>C Implementation: High-performance core with zero-overhead abstractions, optimized for embedded systems and production environments.</p>\n<p>Applications:</p>\n<p>Sensor fusion and multi-source data integration<br>Evidence-based reasoning systems<br>Decision support with uncertainty quantification<br>Fault-tolerant logical reasoning<br>Probabilistic inference engines</p>\n<p>Research Contributions:</p>\n<p>Novel integration of Kleene ternary logic with confidence propagation<br>Mathematically proven UNKNOWN persistence behavior in recursive operations<br>High-performance implementation achieving production-grade efficiency<br>Comprehensive statistical analysis framework for ternary logic systems</p>\n<ul>\n<li><a href=\"https://github.com/opsec-ee/rtka-u\">GitHub Repository</a></li>\n</ul>\n<p>Author: H.Overman<br>Contact: <a href=\"mailto:opsec.ee@pm.me\">opsec.ee@pm.me</a><br>Affiliation: Independent Research</p>\n<h2>License</h2>\n<p>This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License \\</p>\n<p>For commercial licensing, please contact <a href=\"mailto:opsec.ee@pm.me\">opsec.ee@pm.me</a></p>\n<p>Keywords: <em>AI, ML, Ternary Logic, Uncertainty Reasoning, Kleene Logic, Ternary Logic, Confidence Propagation, Decision Systems, Sensor Fusion, Mathematical Algorithms, Performance Optimization</em></p>\n</div>",
+    "languages": [
+      {
+        "id": "eng",
+        "title": {
+          "en": "English"
+        }
+      }
+    ],
+    "publication_date": "2025-09-18",
+    "publisher": "Zenodo",
+    "resource_type": {
+      "id": "software",
+      "title": {
+        "de": "Software",
+        "en": "Software"
+      }
+    },
+    "rights": [
+      {
+        "description": {
+          "en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."
+        },
+        "icon": "cc-by-icon",
+        "id": "cc-by-4.0",
+        "props": {
+          "scheme": "spdx",
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        "title": {
+          "en": "Creative Commons Attribution 4.0 International"
+        }
+      }
+    ],
+    "title": "Recursive Ternary with Kleene Algorithm + UNKNOWN (RTKA-U)",
+    "version": "v1.1.0"
+  },
+  "parent": {
+    "access": {
+      "owned_by": {
+        "user": "1412319"
+      },
+      "settings": {
+        "accept_conditions_text": null,
+        "allow_guest_requests": false,
+        "allow_user_requests": false,
+        "secret_link_expiration": 0
+      }
+    },
+    "communities": {},
+    "id": "17148690",
+    "pids": {
+      "doi": {
+        "client": "datacite",
+        "identifier": "10.5281/zenodo.17148690",
+        "provider": "datacite"
+      }
+    }
+  },
+  "pids": {
+    "doi": {
+      "client": "datacite",
+      "identifier": "10.5281/zenodo.17148691",
+      "provider": "datacite"
+    },
+    "oai": {
+      "identifier": "oai:zenodo.org:17148691",
+      "provider": "oai"
+    }
+  },
+  "revision_id": 3,
+  "stats": {
+    "all_versions": {
+      "data_volume": 0.0,
+      "downloads": 0,
+      "unique_downloads": 0,
+      "unique_views": 4,
+      "views": 4
+    },
+    "this_version": {
+      "data_volume": 0.0,
+      "downloads": 0,
+      "unique_downloads": 0,
+      "unique_views": 4,
+      "views": 4
+    }
+  },
+  "status": "published",
+  "swh": {},
+  "updated": "2025-09-17T23:48:32.937523+00:00",
+  "versions": {
+    "index": 1,
+    "is_latest": true
+  }
+}

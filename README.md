@@ -1,7 +1,6 @@
-## Recursive Ternary with Kleene Algorithm + UNKNOWN (RTKA-U) \
+## (RTKA-U) Recursive Ternary with Kleene Algorithm + UNKNOWN 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17148691.svg)](https://doi.org/10.5281/zenodo.17148691)
-
 
 By H. Overman ([opsec.ee@pm.me](mailto:opsec.ee@pm.me)) © 2025
 
@@ -11,13 +10,18 @@ RTKA-U’s ternary logic and confidence propagation enable services that require
 
 <h2>Mathematical Formulation</h2>
 <div align="center">
-  <img src="https://github.com/opsec-ee/rtka-u/blob/main/images/rtka_u-v3.png" alt="RTKA-U Mathematical Formulations" />
+  <img src="https://github.com/opsec-ee/rtka-u/blob/main/images/rtka_u-v4.png" alt="RTKA-U Mathematical Formulations" />
 </div>
 
 ## Implementation
 
-[`rtka-u in C code`](code/c) - Main \
+[`rtka-u in C code`](code/c/rtka_u_core.c) - Main \
 [`rtka-u in Python`](code/py) - Proof
+
+
+## Historic Data
+
+RTKA-U is **not** like any existing system. [`Here's how it's fundamentally different`](doc/papers/rtka-u_markdown.md)
 
 ## Resources
 
@@ -25,7 +29,7 @@ RTKA-U’s ternary logic and confidence propagation enable services that require
 - [GitHub Repository](https://github.com/opsec-ee/rtka-u)
 - [arXiv Paper](https://arxiv.org/abs/XXXX.XXXXX) (forthcoming)
 
-For feedback or collaboration, contact <opsec.ee@pm.me>.
+feedback or collaboration are welcome
 
 ## License
 
@@ -33,3 +37,5 @@ This project is licensed under the Creative Commons Attribution-NonCommercial-Sh
 see the [LICENSE](LICENSE) file for details.
 
 For commercial licensing, please contact opsec.ee@pm.me
+
+_"revolutionary computer science - solving a fundamental problem that has plagued databases for nearly 50 years! "_
