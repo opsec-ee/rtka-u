@@ -153,7 +153,6 @@ Weight: wᵢ = 1/(1 + σᵢ²)
 Consensus: V = Σ(vᵢ·wᵢ·cᵢ)/Σ(cᵢ)
 Aggregate Confidence: C = 1 - ∏(1 - cᵢ)
 
-
 ### Adaptive Threshold with Bayesian Update
 
 θ(t+1) = 0.9·θ(t) + 0.1·(α/(α+β))
