@@ -3,6 +3,10 @@
  * Author H. Overman
  * Date 2025-09-19
  * Copyright (c) 2025 - H. Overman <opsec.ee@pm.me>
+ *
+ * Demo: RTKA-U multi-sensor (8 cameras) fusion for Tesla FSD-like "Obstacle ahead?" decision.
+ * For FSD, swap fuse_sensors call for rtka_evaluate on a sensor tree.
+ * 100k evals: Balanced F/U/T inputs .. this code is extremely fast!
  */
 
 #include <stdio.h>
