@@ -103,8 +103,10 @@ throughout the decision pipeline.
 ## Historic Data
 
 RTKA-U is **not** like any existing system. \
-[`Historcal Data`](doc/papers/rtka-u_markdown.md)
-
+[`Historcal Data`](doc/papers/rtka-u_markdown.md) \
+[`Technical Distinction`](doc/papers/technical-distinction.md)
+    
+    
 ## Resources
 
 - [Documentation](doc/rtka-u.pdf)
