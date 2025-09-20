@@ -6,7 +6,7 @@
  *
  * Demo: RTKA-U multi-sensor (8 cameras) fusion for Tesla FSD-like "Obstacle ahead?" decision.
  * For FSD, swap fuse_sensors call for rtka_evaluate on a sensor tree.
- * 100k evals: Balanced F/U/T inputs .. this code is extremely fast!
+ * 100k evals: Balanced F/U/T inputs .. [blazing fast!]
  */
 
 #include <stdio.h>
