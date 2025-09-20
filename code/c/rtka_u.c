@@ -13,7 +13,8 @@
  * gcc -fsanitize=thread -march=native -DPARALLEL_ENABLED rtka_u.c -lpthread -lm -o rtka_tsan
  * or gcc -fsanitize=thread -mavx -DPARALLEL_ENABLED rtka_u.c -lpthread -lm -o rtka_tsan
  *
- * srand(42U); seed all three executions (scalar, parallel, and tsan) to produce identical results
+ * 100000 revolution Stats: TRUE 96848, FALSE 739, UNKNOWN 2413 | Avg 0.000 ms | Total 27.569 ms
+ * srand(42U); seed (scalar, parallel, and tsan) produce identical T | F | U regression
 */
 
 #include <stdio.h>
