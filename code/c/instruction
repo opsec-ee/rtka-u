@@ -1,5 +1,0 @@
-
-$ ./rtka_scalar 2>&1 | cat
-$ ./rtka_parallel 2>&1 | cat
-
-
