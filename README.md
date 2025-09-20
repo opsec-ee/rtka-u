@@ -5,6 +5,16 @@
 
 By H. Overman ([opsec.ee@pm.me](mailto:opsec.ee@pm.me)) © 2025
 
+RTKA-U represents a mathematically rigorous formal logic framework designed for \
+computational uncertainty reasoning in systems requiring deterministic guarantees. \
+Unlike statistical or machine learning approaches to confidence scoring, RTKA-U \
+implements recursive ternary logic with Kleene operations, providing formal proofs \
+and algebraic guarantees for uncertainty propagation. The confidence quantification \
+within this framework follows established mathematical principles rather than \
+probabilistic estimates, making it suitable for safety-critical applications in \
+sensor fusion, fault-tolerant systems, and formal verification domains where \
+mathematical correctness remains paramount.
+
 The RTKA-U framework implements an advanced extension of strong Kleene logic, \
 enabling recursive processing of ternary truth values represented as T = {-1, 0, 1}, \
 corresponding to FALSE, UNKNOWN, and TRUE states respectively. This mathematical \
