@@ -1,6 +1,7 @@
 ## (RTKA-U) Recursive Ternary with Kleene Algorithm + UNKNOWN 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17148691.svg)](https://doi.org/10.5281/zenodo.17148691)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0007--9737--762X-green.svg)](https://orcid.org/0009-0007-9737-762X)
 
 By H. Overman ([opsec.ee@pm.me](mailto:opsec.ee@pm.me)) © 2025
 
@@ -103,8 +104,10 @@ throughout the decision pipeline.
 ## Historic Data
 
 RTKA-U is **not** like any existing system. \
-[`Historcal Data`](doc/papers/rtka-u_markdown.md)
-
+[`Historcal Data`](doc/papers/rtka-u_markdown.md) \
+[`Technical Distinction`](doc/papers/technical-distinction.md)
+    
+    
 ## Resources
 
 - [Documentation](doc/rtka-u.pdf)

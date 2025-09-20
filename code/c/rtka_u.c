@@ -1,6 +1,8 @@
 /**
  * File rtka_u.c
  * Copyright (c) 2025 - H. Overman <opsec.ee@pm.me>
+ * DOI: https://doi.org/10.5281/zenodo.17148691
+ * ORCHID: https://orcid.org/0009-0007-9737-762X
  */
 
 /* # Scalar mode
@@ -12,6 +14,9 @@
  * # Thread safety check
  * gcc -fsanitize=thread -march=native -DPARALLEL_ENABLED rtka_u.c -lpthread -lm -o rtka_tsan
  * or gcc -fsanitize=thread -mavx -DPARALLEL_ENABLED rtka_u.c -lpthread -lm -o rtka_tsan
+ *
+ * 100000 revolution Stats: TRUE 96848, FALSE 739, UNKNOWN 2413 | Avg 0.000 ms | Total 27.569 ms
+ * srand(42U); seed (scalar, parallel, and tsan) produce identical T | F | U regression
 */
 
 #include <stdio.h>
