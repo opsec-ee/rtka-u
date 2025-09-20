@@ -26,7 +26,7 @@ maintaining mathematical rigor and operational efficiency throughout the decisio
 pipeline.
 
 ## Mathematical Foundation
-[`Mathematical Rigor`](doc/papers/mathematics.md)
+[`Mathematical Rigor`](/doc/papers/mathematics.md)
 
 RTKA-U extends classical Boolean logic through recursive ternary evaluation, \
 where uncertainty itself becomes a branching point for deeper analysis. This \
