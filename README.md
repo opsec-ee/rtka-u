@@ -4,9 +4,26 @@
 
 By H. Overman ([opsec.ee@pm.me](mailto:opsec.ee@pm.me)) © 2025
 
-This system extends strong Kleene logic to recursively process ternary truth values **T = {-1, 0, 1}** (FALSE, UNKNOWN, TRUE) with confidence propagation, preserving uncertainty unless logically required. It is efficient (**O(n)** time, **O(1)** space) and applicable to AI, sensor fusion, and decision-making.
+The RTKA-U framework implements an advanced extension of strong Kleene logic, \
+enabling recursive processing of ternary truth values represented as T = {-1, 0, 1}, \
+corresponding to FALSE, UNKNOWN, and TRUE states respectively. This mathematical \
+foundation incorporates sophisticated confidence propagation mechanisms that preserve \
+uncertainty throughout the computational pipeline, only resolving ambiguity when \
+logical determination becomes mathematically necessary. The implementation achieves \
+exceptional computational efficiency with O(n) time complexity and O(1) space \
+requirements, making it suitable for real-time applications in resource-constrained \
+environments.
 
-RTKA-U’s ternary logic and confidence propagation enable services that require robust handling of uncertainty, incomplete data, or probabilistic reasoning.
+The framework's ternary logic architecture combined with confidence propagation \
+enables critical services across industries that demand robust handling of uncertainty, \
+incomplete data, and probabilistic reasoning. This capability proves essential for \
+artificial intelligence systems operating with partial information, sensor fusion \
+networks processing noisy or conflicting inputs, and enterprise decision-making \
+platforms where complete information rarely exists. The system transforms how \
+organizations approach computational challenges involving ambiguity, providing \
+deterministic processing methods for inherently non-deterministic problems while \
+maintaining mathematical rigor and operational efficiency throughout the decision \
+pipeline.
 
 <h2>Mathematical Formulation</h2>
 <div align="center">
