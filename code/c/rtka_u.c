@@ -12,6 +12,8 @@
  * # Thread safety check
  * gcc -fsanitize=thread -march=native -DPARALLEL_ENABLED rtka_u.c -lpthread -lm -o rtka_tsan
  * or gcc -fsanitize=thread -mavx -DPARALLEL_ENABLED rtka_u.c -lpthread -lm -o rtka_tsan
+ *
+ * srand(42U); seed all three executions (scalar, parallel, and tsan) to produce identical results
 */
 
 #include <stdio.h>
