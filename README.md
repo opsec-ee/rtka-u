@@ -101,7 +101,8 @@ throughout the decision pipeline.
 
 ## Historic Data
 
-RTKA-U is **not** like any existing system. [`Historcal Data`](doc/papers/rtka-u_markdown.md)
+RTKA-U is **not** like any existing system. \
+[`Historcal Data`](doc/papers/rtka-u_markdown.md)
 
 ## Resources
 
