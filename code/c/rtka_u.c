@@ -1,19 +1,17 @@
 /**
  * File rtka_u.c
- * Author H. Overman
- * Date 2025-09-18
  * Copyright (c) 2025 - H. Overman <opsec.ee@pm.me>
  */
 
 /* # Scalar mode
- * gcc -O3 -march=native rtka_u_core_parallel_enhanced-v1_3.c -lm -o rtka_scalar
+ * gcc -O3 -march=native rtka_u.c -lm -o rtka_scalar
 
  * # Parallel mode
- * gcc -O3 -march=native -DPARALLEL_ENABLED rtka_u_core_parallel_enhanced-v1_3.c -lpthread -lm -o rtka_parallel
+ * gcc -O3 -march=native -DPARALLEL_ENABLED rtka_u.c -lpthread -lm -o rtka_parallel
 
  * # Thread safety check
- * gcc -fsanitize=thread -march=native -DPARALLEL_ENABLED rtka_u_core_parallel_enhanced-v1_3.c -lpthread -lm -o rtka_tsan
- * or gcc -fsanitize=thread -mavx -DPARALLEL_ENABLED rtka_u_core_parallel_enhanced-v1_3.c -lpthread -lm -o rtka_tsan
+ * gcc -fsanitize=thread -march=native -DPARALLEL_ENABLED rtka_u.c -lpthread -lm -o rtka_tsan
+ * or gcc -fsanitize=thread -mavx -DPARALLEL_ENABLED rtka_u.c -lpthread -lm -o rtka_tsan
 */
 
 #include <stdio.h>

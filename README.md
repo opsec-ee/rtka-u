@@ -26,6 +26,7 @@ maintaining mathematical rigor and operational efficiency throughout the decisio
 pipeline.
 
 ## Mathematical Foundation
+[`Mathematical Rigor`](/doc/papers/mathematics.md)
 
 RTKA-U extends classical Boolean logic through recursive ternary evaluation, \
 where uncertainty itself becomes a branching point for deeper analysis. This \
@@ -95,8 +96,8 @@ throughout the decision pipeline.
 
 ## Implementation
 
-[`rtka-u in C code`](code/c/rtka_u_core_parallel_enhanced-v1_3.c) - Main \
-[`rtka-u in Python`](code/py) - Proof
+[`rtka-u in C code`](code/c/rtka_u.c) - Main \
+[`rtka-u in Python`](code/py/rtka_u.py) - Proof
 
 
 ## Historic Data
