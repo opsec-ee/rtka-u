@@ -1,4 +1,5 @@
-### Literature Review: Ternary and Multi-Valued Logics for Uncertainty Handling in AI and Decision Systems 
+### Literature Review:
+### Ternary and Multi-Valued Logics for Uncertainty Handling in AI and Decision Systems 
 
 This literature review focuses on the foundations and applications of ternary \
 (three-valued) logics, particularly Kleene's three-valued logic, in managing \
