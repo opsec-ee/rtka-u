@@ -164,12 +164,8 @@ A Survey and Interpretation". *Neuro-Symbolic AI*, 342, 327-361. \
 *Journal of Applied Non-Classical Logics*, 33(2), 121-148. \
 [Taylor & Francis](https://www.tandfonline.com/doi/full/10.1080/11663081.2023.2180312)
 
-### Verification Note
-
-Several references to 2024-2025 publications in the original literature review \
-may represent forthcoming works or conference proceedings not yet indexed in \
-standard academic databases. These temporal references should be verified \
-against current publication records as the field rapidly evolves.
+**Overman, H. (2025)**. RTKA-U: Recursive Ternary with Kleene Algorithm + UNKNOWN. \
+[Overman](https://doi.org/10.5281/zenodo.17148691)
 
 ### Digital Object Identifiers (DOIs) for Key Papers
 
