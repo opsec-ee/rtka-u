@@ -1,1 +1,1 @@
-$ ./test 2>&1 | cat
+$ ./rtka-u 2>&1 | cat
