@@ -1,1 +1,20 @@
-$ ./rtka-u 2>&1 | cat
+
+$ ./rtka_scalar 2>&1 | cat
+RTKA-U Enhanced Demo v1.3
+=========================
+Operator tests passed
+Complex tree test passed
+Trial 0: TRUE (conf: 0.897, time: 0.000 ms)
+Trial 1000: TRUE (conf: 0.997, time: 0.000 ms)
+Trial 2000: UNKNOWN (conf: 0.044, time: 0.000 ms)
+Trial 3000: TRUE (conf: 0.992, time: 0.000 ms)
+Trial 4000: TRUE (conf: 0.896, time: 0.000 ms)
+Trial 69000: TRUE (conf: 0.940, time: 0.000 ms)
+Trial 70000: UNKNOWN (conf: 0.010, time: 0.000 ms)
+Trial 71000: TRUE (conf: 0.987, time: 0.000 ms)
+Trial 72000: TRUE (conf: 0.972, time: 0.000 ms)
+Trial 99000: TRUE (conf: 0.978, time: 0.000 ms)
+
+Stats: TRUE 96848, FALSE 739, UNKNOWN 2413 | Avg 0.000 ms | Total 12.115 ms
+UNKNOWN rate: 2.41%
+Scalar: Enabled.
