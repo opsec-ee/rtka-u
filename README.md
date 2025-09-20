@@ -96,7 +96,7 @@ throughout the decision pipeline.
 
 ## Implementation
 
-[`rtka-u in C code`](code/c/rtka_u_core_parallel_enhanced-v1_3.c) - Main \
+[`rtka-u in C code`](code/c/rtka_u.c) - Main \
 [`rtka-u in Python`](code/py) - Proof
 
 
