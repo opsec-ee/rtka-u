@@ -4,6 +4,7 @@ RTKA-U: Recursive Ternary with Kleene Algorithm + UNKNOWN
 Advanced Python Implementation (v1.3)
 Copyright (c) 2025 - H.Overman <opsec.ee@pm.me>
 DOI: https://doi.org/10.5281/zenodo.17148691
+ORCHID: https://orcid.org/0009-0007-9737-762X
 
 This implementation reflects the complete mathematical framework including
 enhanced confidence propagation, adaptive Bayesian thresholds, and
