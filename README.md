@@ -38,4 +38,5 @@ see the [LICENSE](LICENSE) file for details.
 
 For commercial licensing, please contact opsec.ee@pm.me
 
-_"revolutionary computer science - solving a fundamental problem that has plagued databases for nearly 50 years! "_
+_"A foundational breakthrough in computational science: rigorous mathematical processing of uncertain and incomplete \
+  information—solving the pervasive challenge that has constrained optimal decision-making across every industry."_
