@@ -47,4 +47,4 @@ For detailed mathematical proofs, implementation specifications, and usage examp
 ---
 
 *Copyright (c) 2025 - H. Overman*  
-*This document is part of the RTKA-U project documentation*
+*This document is part of the RTKA project documentation*
