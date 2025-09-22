@@ -71,6 +71,7 @@ The framework represents a unique contribution to computational logic, distinct 
 - [arXiv Preprint](https://arxiv.org/abs/XXXX.XXXXX) (forthcoming)
 
 Collaboration and technical feedback are welcome.
+For questions about core development, module integration patterns, or research collaboration opportunities, please contact the author. Note that response times may vary as this is an active research project without dedicated support resources.
 
 ## License
 
@@ -78,4 +79,6 @@ This project is licensed under the Creative Commons Attribution-NonCommercial-Sh
 
 For commercial licensing inquiries, please contact opsec.ee@pm.me
 
-_"A foundational breakthrough in computational science: rigorous mathematical processing of uncertain and incomplete information—solving the pervasive challenge that has constrained optimal decision-making across every industry."_
+## Disclaimer
+
+This software implements the mathematically sound Recursive Ternary Knowledge Algorithm (RTKA) based on validated Kleene logic principles. While the algorithm itself is theoretically correct and suitable for commercial applications under appropriate licensing, this particular implementation is experimental research code that may not be suitable for production use. The codebase demonstrates algorithmic feasibility but lacks the comprehensive testing, optimization, and hardening required for deployment. Users assume all risks associated with using this proof-of-concept implementation. For commercial licensing or production-grade development inquiries, contact opsec.ee@pm.me
