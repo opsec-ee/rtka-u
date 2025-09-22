@@ -65,7 +65,7 @@ This architecture enables applications previously impossible with binary logic, 
 
 The framework represents a unique contribution to computational logic, distinct from existing approaches to uncertainty reasoning.
 
-[`Historical Context`](docs/papers/rtka-u_markdown.md) - Development history and theoretical foundations  
+[`Historical Context`](docs/papers/rtka-u_foundation.md) - Development history and theoretical foundations  
 [`Technical Distinction`](docs/papers/technical-distinction.md) - Comparison with related systems
     
 ## Resources
