@@ -69,7 +69,7 @@ The framework represents a unique contribution to computational logic, distinct 
 [`Technical Distinction`](doc/papers/technical-distinction.md) - Comparison with related systems
     
 ## Resources
-- [RTKA html](/doc/rtka.html)
+- [RTKA html](/rtka.html)
 - [Technical Documentation](doc/rtka-u.pdf)
 - [GitHub Repository](https://github.com/opsec-ee/rtka-u)
 - [arXiv Preprint](https://arxiv.org/abs/XXXX.XXXXX) (forthcoming)
