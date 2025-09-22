@@ -1,12 +1,9 @@
 
 ## [RTKA] Recursive Ternary Knowledge Algorithm 
 
-_Dual DOI is temporary until RTKA-IS module is further, Github and Zenodo didn't play well together, apologies._
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17137875.svg)](https://doi.org/10.5281/zenodo.17137875)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17148691.svg)](https://doi.org/10.5281/zenodo.17148691)
-
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0007--9737--762X-green.svg)](https://orcid.org/0009-0007-9737-762X)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17137875.svg)](https://doi.org/10.5281/zenodo.17137875)
+
 
 By H. Overman ([opsec.ee@pm.me](mailto:opsec.ee@pm.me)) © 2025
 
