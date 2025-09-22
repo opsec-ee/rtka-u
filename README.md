@@ -77,8 +77,8 @@ For questions about core development, module integration patterns, or research c
 
 This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. See the [LICENSE](LICENSE) file for details.
 
-For commercial licensing inquiries, please contact opsec.ee@pm.me
+_For commercial licensing inquiries, please contact_ opsec.ee@pm.me
 
 ## Disclaimer
 
-This software implements the mathematically sound Recursive Ternary Knowledge Algorithm (RTKA) based on validated Kleene logic principles. While the algorithm itself is theoretically correct and suitable for commercial applications under appropriate licensing, this particular implementation is experimental research code that may not be suitable for production use. The codebase demonstrates algorithmic feasibility but lacks the comprehensive testing, optimization, and hardening required for deployment. Users assume all risks associated with using this proof-of-concept implementation. For commercial licensing or production-grade development inquiries, contact opsec.ee@pm.me
+_This software implements the mathematically sound Recursive Ternary Knowledge Algorithm (RTKA) based on validated Kleene logic principles. While the algorithm itself is theoretically correct and suitable for commercial applications under appropriate licensing, this particular implementation is experimental research code that may not be suitable for production use. The codebase demonstrates algorithmic feasibility but lacks the comprehensive testing, optimization, and hardening required for deployment. Users assume all risks associated with using this proof-of-concept implementation. For commercial licensing or production-grade development inquiries, contact_ opsec.ee@pm.me
