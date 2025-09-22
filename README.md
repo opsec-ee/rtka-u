@@ -1,5 +1,5 @@
 
-## Recursive Ternary with Kleene Algorithm + UNKNOWN (RTKA-U)
+## [RTKA] Recursive Ternary Knowledge Algorithm
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17148691.svg)](https://doi.org/10.5281/zenodo.17148691)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0007--9737--762X-green.svg)](https://orcid.org/0009-0007-9737-762X)
