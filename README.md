@@ -15,7 +15,7 @@ RTKA represents a mathematically rigorous formal logic framework designed for co
 The framework extends strong three-valued logic through recursive processing of ternary truth values represented as T = {-1, 0, 1}, corresponding to FALSE, UNKNOWN, and TRUE states respectively. This mathematical foundation incorporates sophisticated confidence propagation mechanisms that preserve uncertainty throughout the computational pipeline, resolving ambiguity only when logical determination becomes mathematically necessary. The implementation achieves exceptional computational efficiency with O(n) time complexity and O(1) space requirements, suitable for real-time applications in resource-constrained environments.
 
 The architecture enables critical services across industries demanding robust handling of uncertainty and incomplete data. This capability proves essential for artificial intelligence systems operating with partial information, sensor fusion networks processing conflicting inputs, and enterprise decision-making platforms where complete information rarely exists. The system provides deterministic processing methods for inherently non-deterministic problems while maintaining mathematical rigor and operational efficiency throughout the decision pipeline.
-
+ 
 ## Mathematical Foundation
 [`Mathematical Rigor`](/doc/papers/mathematics.md)
 
@@ -69,7 +69,7 @@ The framework represents a unique contribution to computational logic, distinct 
 [`Technical Distinction`](doc/papers/technical-distinction.md) - Comparison with related systems
     
 ## Resources
-
+- [RTKA html](/doc/rtka.html)
 - [Technical Documentation](doc/rtka-u.pdf)
 - [GitHub Repository](https://github.com/opsec-ee/rtka-u)
 - [arXiv Preprint](https://arxiv.org/abs/XXXX.XXXXX) (forthcoming)
