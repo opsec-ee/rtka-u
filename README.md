@@ -17,7 +17,7 @@ The framework extends strong three-valued logic through recursive processing of 
 The architecture enables critical services across industries demanding robust handling of uncertainty and incomplete data. This capability proves essential for artificial intelligence systems operating with partial information, sensor fusion networks processing conflicting inputs, and enterprise decision-making platforms where complete information rarely exists. The system provides deterministic processing methods for inherently non-deterministic problems while maintaining mathematical rigor and operational efficiency throughout the decision pipeline.
  
 ## Mathematical Foundation
-[`Mathematical Rigor`](/doc/papers/mathematics.md)
+[`Mathematical Rigor`](/docs/papers/mathematics.md)
 
 The framework transforms classical Boolean logic through recursive ternary evaluation, where uncertainty becomes a branching point for deeper analysis. This creates a fractal decision structure where UNKNOWN states serve as gateways to progressive resolution refinement rather than terminal conditions.
 
@@ -65,12 +65,12 @@ This architecture enables applications previously impossible with binary logic, 
 
 The framework represents a unique contribution to computational logic, distinct from existing approaches to uncertainty reasoning.
 
-[`Historical Context`](doc/papers/rtka-u_markdown.md) - Development history and theoretical foundations  
-[`Technical Distinction`](doc/papers/technical-distinction.md) - Comparison with related systems
+[`Historical Context`](docs/papers/rtka-u_markdown.md) - Development history and theoretical foundations  
+[`Technical Distinction`](docs/papers/technical-distinction.md) - Comparison with related systems
     
 ## Resources
-- [RTKA html](/index.html)
-- [Technical Documentation](doc/rtka-u.pdf)
+- [RTKA html](/docs/index.html)
+- [Technical Documentation](docs/rtka-u.pdf)
 - [GitHub Repository](https://github.com/opsec-ee/rtka-u)
 - [arXiv Preprint](https://arxiv.org/abs/XXXX.XXXXX) (forthcoming)
 
