@@ -6,7 +6,7 @@
 
 By H. Overman ([opsec.ee@pm.me](mailto:opsec.ee@pm.me)) © 2025
 
-RTKA-U represents a mathematically rigorous formal logic framework designed for computational uncertainty reasoning in systems requiring deterministic guarantees. Unlike statistical or machine learning approaches to confidence scoring, this framework implements recursive ternary logic operations with formal proofs and algebraic guarantees for uncertainty propagation. The confidence quantification follows established mathematical principles rather than probabilistic estimates, making it suitable for safety-critical applications in sensor fusion, fault-tolerant systems, and formal verification domains where mathematical correctness remains paramount.
+RTKA represents a mathematically rigorous formal logic framework designed for computational uncertainty reasoning in systems requiring deterministic guarantees. Unlike statistical or machine learning approaches to confidence scoring, this framework implements recursive ternary logic operations with formal proofs and algebraic guarantees for uncertainty propagation. The confidence quantification follows established mathematical principles rather than probabilistic estimates, making it suitable for safety-critical applications in sensor fusion, fault-tolerant systems, and formal verification domains where mathematical correctness remains paramount.
 
 The framework extends strong three-valued logic through recursive processing of ternary truth values represented as T = {-1, 0, 1}, corresponding to FALSE, UNKNOWN, and TRUE states respectively. This mathematical foundation incorporates sophisticated confidence propagation mechanisms that preserve uncertainty throughout the computational pipeline, resolving ambiguity only when logical determination becomes mathematically necessary. The implementation achieves exceptional computational efficiency with O(n) time complexity and O(1) space requirements, suitable for real-time applications in resource-constrained environments.
 
@@ -45,10 +45,10 @@ The parallel implementation achieves O(n/p + log p) time complexity with p threa
 
 ### Fundamental Innovation
 
-Traditional binary logic forces premature decisions under uncertainty. RTKA-U transforms uncertainty from a limitation into a navigable dimension through its recursive ternary structure:
+Traditional binary logic forces premature decisions under uncertainty. RTKA transforms uncertainty from a limitation into a navigable dimension through its recursive ternary structure:
 
 **Traditional**: TRUE | FALSE | MAYBE (terminal)  
-**RTKA-U**: TRUE | FALSE | [MAYBE → recursive ternary evaluation]
+**RTKA**: TRUE | FALSE | [MAYBE → recursive ternary evaluation]
 
 This architecture enables applications previously impossible with binary logic, including progressive consensus refinement, adaptive sensor fusion with quantified uncertainty, and decision systems that explicitly navigate ambiguity rather than forcing premature resolution.
 
