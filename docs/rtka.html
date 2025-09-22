@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[RTKA] Recursive Ternary Knowledge Algorithm</title>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 1200px; margin: 20px auto; text-align: left; }
+        h1, h2 { color: #333; text-align: center; }
+        h3 { color: #333; text-align: left; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; margin: 0 auto; max-width: 800px; }
+        code { font-family: monospace; }
+        .theorem { border-left: 4px solid #007bff; padding-left: 10px; margin: 10px auto; font-style: italic; max-width: 800px; }
+        ul { list-style-type: disc; padding-left: 20px; margin: 0 auto; max-width: 800px; }
+        table { border-collapse: collapse; width: 90%; margin: 20px auto; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .diagram-container { display: flex; justify-content: center; margin: 20px 0; }
+        .diagram { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; text-align: center; font-family: monospace; max-width: 100%; }
+        .diagram .core { grid-column: 1 / 5; border: 2px solid #007bff; padding: 15px; background: #e7f3ff; border-radius: 5px; }
+        .diagram .module { border: 1px solid #ccc; padding: 10px; background: #f9f9f9; border-radius: 5px; }
+        .diagram .arrow { font-size: 1.2em; color: #666; }
+        .diagram .sub-core { margin: 5px 0; border-top: 1px solid #ccc; padding-top: 5px; }
+        section { max-width: 800px; margin: 0 auto; }
+        header { text-align: center; }
+        footer { text-align: center; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>[RTKA] Recursive Ternary Knowledge Algorithm</h1>
+        <p>By H. Overman (opsec.ee@pm.me) © 2025</p>
+    </header>
+
+    <section>
+        <h2>Overview</h2>
+        <p>This system extends strong Kleene logic to recursively process ternary truth values \(\mathbb{T} = \{-1, 0, 1\}\) (FALSE, UNKNOWN, TRUE) with confidence propagation, preserving uncertainty unless logically required. It is efficient (\(\mathcal{O}(n)\) time, \(\mathcal{O}(1)\) space) and applicable to AI, sensor fusion, and decision-making.</p>
+        <p>The modular system centers on RTKA-U as the universal core, with extensions like RTKA-IS (industrial sensors) and RTKA-ML (AI/ML) sharing similarities in recursive ternary structures, confidence propagation, and adaptive optimizations, as seen in their C implementations.</p>
+    </section>
+
+    <section>
+        <h2>Comprehensive Mathematical Foundation</h2>
+
+        <h3>Domain and Basic Operations</h3>
+        <p>\(\mathbb{T} = \{-1, 0, 1\}\) (FALSE, UNKNOWN, TRUE).</p>
+        <ul>
+            <li>Negation: \(\neg_r a = -a\)</li>
+            <li>AND: \(a \land_r b = \min(a, b)\)</li>
+            <li>OR: \(a \lor_r b = \max(a, b)\)</li>
+            <li>Implication: \(a \to_r b = \max(-a, b)\)</li>
+            <li>Equivalence: \(a \leftrightarrow_r b = (a == b) ? 1 : ((a == 0 || b == 0) ? 0 : -1)\)</li>
+        </ul>
+
+        <h3>Recursive Formulation</h3>
+        <p>For \(\phi \in \{\land_r, \lor_r, \neg_r\}\), \(\vec{x} \in \mathbb{T}^n\):</p>
+        \[
+        \mathcal{R}(\phi, \vec{x}) =
+        \begin{cases}
+        x_n & \text{if } n = 1 \\
+        \phi(x_1, \mathcal{R}(\phi, \langle x_2, \dots, x_n \rangle)) & \text{if } n > 1
+        \end{cases}
+        \]
+
+        <p>Recursive ternary nodes with MAYBE branching:</p>
+        <p>trit_t: T_FALSE=0, T_MAYBE=1, T_TRUE=2 (note shift from {-1,0,1}).</p>
+        <p>Node: value, if_false/maybe/true sub-nodes, probs (false/maybe/true), depth, context.</p>
+        <p>Creation: Recursive with max_depth, sub-contexts.</p>
+        <p>Resolution: Depth-first, random branch selection with probs (0.33 each default).</p>
+
+        <h3>Confidence Propagation</h3>
+        <p>For \(\vec{c} \in [0,1]^n\):</p>
+        \[
+        \mathcal{C}(\phi, \vec{c}) =
+        \begin{cases}
+        \prod_{i=1}^n c_i & \text{if } \phi = \land_r \\
+        1 - \prod_{i=1}^n (1 - c_i) & \text{if } \phi = \lor_r \\
+        c_1 & \text{if } \phi = \neg_r
+        \end{cases}
+        \]
+        <p>Extended: AND \(c_1 \cdot c_2\), OR \(1 - (1-c_1)(1-c_2)\), NOT \(c_1\), IMPLY \(1 - (1-c_1) + (1-c_1)c_2\), EQUIV \(c_1 \cdot c_2\).</p>
+
+        <h3>UNKNOWN Preservation Theorem</h3>
+        <div class="theorem">
+            \(\mathcal{R}(\phi, \langle 0, x_2, \dots, x_n \rangle) = 0 \iff \nexists x_i : (\phi = \land_r \land x_i = -1) \lor (\phi = \lor_r \land x_i = 1)\).
+            <p>Probability: \(P(\text{UNKNOWN} \mid n) \approx (2/3)^{n-1}\).</p>
+        </div>
+
+        <h3>Fractal Certainty and Recursive Decay</h3>
+        <p>Iterative refinement: certainty += \(\pm 0.5 / 2^d\) per level, until threshold.</p>
+        <p>Decay: \(C = C_0 \cdot (2/3)^{d-1}\).</p>
+
+        <h3>Adaptive Thresholding</h3>
+        <p>Beta update: Success \(\alpha +=1\), failure \(\beta +=1\), \(\theta = \alpha / (\alpha + \beta)\), smoothed 0.9*old + 0.1*new.</p>
+        <p>Sigmoid: \(\sigma(x) = 1 / (1 + e^{-k(x - x_0)})\), LUT interp, coercion if strength >0.8 to UNKNOWN.</p>
+
+        <h3>Variance Weighting and Fusion</h3>
+        <p>Weight: \(w_i = 1 / (1 + v_i)\), LUT.</p>
+        <p>Fusion: Consensus = \(\sum (d_i \cdot w_i \cdot c_i) / \sum (w_i \cdot c_i)\), >0.5 TRUE, <-0.5 FALSE, else UNKNOWN.</p>
+        <p>Confidence: Geometric mean damped by deviation, adaptive var_threshold bump 1.1x if high.</p>
+
+        <h3>Scaling Precomputation</h3>
+        <p>Range reciprocal: \(1 / (\max - \min)\), magnitude: \(1 / \max(|\vec{x}|)\).</p>
+        <p>Normalize: \((v - \min) \cdot\) reciprocal.</p>
+
+        <h3>Fuzzy Matching</h3>
+        <p>Edit distance, confidence *=0.8 per sub, >0.5 to MAYBE.</p>
+
+        <h3>Complete Propagation Methods Summary</h3>
+        <table>
+            <tr><th>Method</th><th>Formula</th><th>Purpose</th><th>Implementation</th></tr>
+            <tr><td>Product Rule</td><td>\(C = \prod c_i\)</td><td>AND confidence</td><td>rtka_base.h</td></tr>
+            <tr><td>Inclusion-Exclusion</td><td>\(C = 1 - \prod(1-c_i)\)</td><td>OR confidence</td><td>rtka_base.h</td></tr>
+            <tr><td>Geometric Mean</td><td>\(C = (\prod c_i)^{1/n}\)</td><td>Consensus aggregation</td><td>Both</td></tr>
+            <tr><td>Variance Weighting</td><td>\(w = 1/(1 + \sigma^2)\)</td><td>Sensor quality</td><td>rtka-is</td></tr>
+            <tr><td>Beta Distribution</td><td>\(\theta = \alpha/(\alpha+\beta)\)</td><td>Adaptive learning</td><td>Both</td></tr>
+            <tr><td>Z-Score Penalty</td><td>\(p = 1/(1 + z^2)\)</td><td>Outlier handling</td><td>rtka-is</td></tr>
+            <tr><td>Sigmoid Coercion</td><td>\(\sigma = 1/(1+e^{-k(x-x_0)})\)</td><td>Graduated threshold</td><td>Both</td></tr>
+            <tr><td>Recursive Decay</td><td>\(C = C_0 \cdot (2/3)^{d-1}\)</td><td>Fractal uncertainty</td><td>rtka-ml</td></tr>
+            <tr><td>Wilson Interval</td><td>\(CI = p \pm z\sqrt{p(1-p)/n}\)</td><td>Confidence bounds</td><td>Both</td></tr>
+            <tr><td>Thompson Sampling</td><td>\(x \sim \text{Beta}(\alpha,\beta)\)</td><td>Exploration</td><td>Advanced</td></tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Implementation</h2>
+        <p>Test cases (Python):</p>
+        <ul>
+            <li>AND: \([0, 1, -1]\), confidences \([0.8, 0.9, 0.7]\) → \(-1\), 0.504</li>
+            <li>OR: \([0, -1, 1]\), confidences \([0.8, 0.9, 0.7]\) → \(1\), 0.964</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Modular Architecture</h2>
+        <div class="diagram-container">
+            <div class="diagram">
+                <div class="core">
+                    RTKA-U Core
+                    <div class="sub-core">Ternary Logic Operations</div>
+                    <div class="sub-core">Recursive Evaluation Engine</div>
+                    <div class="sub-core">Confidence Propagation</div>
+                    <div class="sub-core">Early Termination Optimizer</div>
+                </div>
+                <div class="arrow">↓</div>
+                <div class="arrow">↓</div>
+                <div class="arrow">↓</div>
+                <div class="arrow">↓</div>
+                <div class="module">RTKA-ML<br>AI/ML</div>
+                <div class="module">RTKA-IS<br>Sensors</div>
+                <div class="module">RTKA-BIO<br>Biological</div>
+                <div class="module">RTKA-Q<br>Quantum</div>
+                <div class="arrow">↓</div>
+                <div class="arrow">↓</div>
+                <div class="arrow">↓</div>
+                <div class="arrow">↓</div>
+                <div class="module">RTKA-NET<br>Network Security</div>
+                <div class="module">RTKA-FIN<br>Financial Systems</div>
+                <div class="module">RTKA-MED<br>Medical Diagnosis</div>
+                <div class="module">RTKA-CRYPTO<br>Cryptography & Blockchain</div>
+                <div class="arrow">↓</div>
+                <div class="arrow">↓</div>
+                <div class="arrow">↓</div>
+                <div class="arrow">↓</div>
+                <div class="module">RTKA-ENERGY<br>Energy Grid</div>
+                <div class="module">RTKA-AEROSPACE<br>Aviation</div>
+                <div class="module">RTKA-GAME<br>Game Theory</div>
+                <div class="module">RTKA-LEGAL<br>Legal Reasoning</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Explore the GitHub repository or read the arXiv paper (x).</p>
+    </footer>
+
+</body>
+</html>
