@@ -1,4 +1,4 @@
-# RTKA-U Mathematical Rigor
+# RTKA Mathematical Rigor
 Copyright (c) 2025 - H.Overman opsec.ee@pm.me
 
 ## Evolution from Original Vision to Current Implementation
