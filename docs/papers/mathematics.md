@@ -5,7 +5,6 @@ Copyright (c) 2025 - H.Overman opsec.ee@pm.me
 
 ### Original Insight: Recursive Ternary Resolution
 
-The foundational breakthrough recognized that uncertainty need not be terminal. \
 Traditional ternary logic treats MAYBE as a final state, but the original vision \
 introduced recursive branching where each UNKNOWN state spawns a new ternary \
 evaluation tree, enabling infinite precision refinement of uncertainty.
@@ -240,10 +239,10 @@ evidence accumulates, reducing both false positives and false negatives.
 
 ## Conclusion
 
-RTKA-U transforms the mathematical foundations of computational decision-making \
+_RTKA transforms the mathematical foundations of computational decision-making \
 by introducing recursive ternary evaluation with confidence propagation. The \
 framework provides provable guarantees on convergence, error bounds, and \
 performance while maintaining computational efficiency suitable for real-time \
 applications. This represents a fundamental advancement in computer science, \
 addressing the universal challenge of decision-making under uncertainty with \
-mathematical rigor and practical efficiency.
+mathematical rigor and practical efficiency._
