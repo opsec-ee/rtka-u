@@ -1,19 +1,20 @@
 
-## Recursive Ternary with Kleene Algorithm + UNKNOWN (RTKA-U)
+## [RTKA] Recursive Ternary Knowledge Algorithm 
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17148691.svg)](https://doi.org/10.5281/zenodo.17148691)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0007--9737--762X-green.svg)](https://orcid.org/0009-0007-9737-762X)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17137875.svg)](https://doi.org/10.5281/zenodo.17137875)
+
 
 By H. Overman ([opsec.ee@pm.me](mailto:opsec.ee@pm.me)) © 2025
 
-RTKA-U represents a mathematically rigorous formal logic framework designed for computational uncertainty reasoning in systems requiring deterministic guarantees. Unlike statistical or machine learning approaches to confidence scoring, this framework implements recursive ternary logic operations with formal proofs and algebraic guarantees for uncertainty propagation. The confidence quantification follows established mathematical principles rather than probabilistic estimates, making it suitable for safety-critical applications in sensor fusion, fault-tolerant systems, and formal verification domains where mathematical correctness remains paramount.
+RTKA represents a mathematically rigorous formal logic framework designed for computational uncertainty reasoning in systems requiring deterministic guarantees. Unlike statistical or machine learning approaches to confidence scoring, this framework implements recursive ternary logic operations with formal proofs and algebraic guarantees for uncertainty propagation. The confidence quantification follows established mathematical principles rather than probabilistic estimates, making it suitable for safety-critical applications in sensor fusion, fault-tolerant systems, and formal verification domains where mathematical correctness remains paramount.
 
 The framework extends strong three-valued logic through recursive processing of ternary truth values represented as T = {-1, 0, 1}, corresponding to FALSE, UNKNOWN, and TRUE states respectively. This mathematical foundation incorporates sophisticated confidence propagation mechanisms that preserve uncertainty throughout the computational pipeline, resolving ambiguity only when logical determination becomes mathematically necessary. The implementation achieves exceptional computational efficiency with O(n) time complexity and O(1) space requirements, suitable for real-time applications in resource-constrained environments.
 
 The architecture enables critical services across industries demanding robust handling of uncertainty and incomplete data. This capability proves essential for artificial intelligence systems operating with partial information, sensor fusion networks processing conflicting inputs, and enterprise decision-making platforms where complete information rarely exists. The system provides deterministic processing methods for inherently non-deterministic problems while maintaining mathematical rigor and operational efficiency throughout the decision pipeline.
-
+ 
 ## Mathematical Foundation
-[`Mathematical Rigor`](/doc/papers/mathematics.md)
+[`Mathematical Rigor`](/docs/papers/mathematics.md)
 
 The framework transforms classical Boolean logic through recursive ternary evaluation, where uncertainty becomes a branching point for deeper analysis. This creates a fractal decision structure where UNKNOWN states serve as gateways to progressive resolution refinement rather than terminal conditions.
 
@@ -45,10 +46,10 @@ The parallel implementation achieves O(n/p + log p) time complexity with p threa
 
 ### Fundamental Innovation
 
-Traditional binary logic forces premature decisions under uncertainty. RTKA-U transforms uncertainty from a limitation into a navigable dimension through its recursive ternary structure:
+Traditional binary logic forces premature decisions under uncertainty. RTKA transforms uncertainty from a limitation into a navigable dimension through its recursive ternary structure:
 
 **Traditional**: TRUE | FALSE | MAYBE (terminal)  
-**RTKA-U**: TRUE | FALSE | [MAYBE → recursive ternary evaluation]
+**RTKA**: TRUE | FALSE | [MAYBE → recursive ternary evaluation]
 
 This architecture enables applications previously impossible with binary logic, including progressive consensus refinement, adaptive sensor fusion with quantified uncertainty, and decision systems that explicitly navigate ambiguity rather than forcing premature resolution.
 
@@ -61,12 +62,12 @@ This architecture enables applications previously impossible with binary logic, 
 
 The framework represents a unique contribution to computational logic, distinct from existing approaches to uncertainty reasoning.
 
-[`Historical Context`](doc/papers/rtka-u_markdown.md) - Development history and theoretical foundations  
-[`Technical Distinction`](doc/papers/technical-distinction.md) - Comparison with related systems
+[`Historical Context`](docs/papers/rtka-u_foundation.md) - Development history and theoretical foundations  
+[`Technical Distinction`](docs/papers/technical-distinction.md) - Comparison with related systems
     
 ## Resources
-
-- [Technical Documentation](doc/rtka-u.pdf)
+- [RTKA html](/docs/index.html)
+- [Technical Documentation](docs/rtka-u.pdf)
 - [GitHub Repository](https://github.com/opsec-ee/rtka-u)
 - [arXiv Preprint](https://arxiv.org/abs/XXXX.XXXXX) (forthcoming)
 
