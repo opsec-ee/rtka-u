@@ -67,8 +67,6 @@ The framework represents a unique contribution to computational logic, distinct 
 ## Resources
 - [RTKA Algorithms](https://opsec-ee.github.io/rtka-u/docs/index.html)
 - [Technical Documentation](docs/rtka-u.pdf)
-- [GitHub Repository](https://github.com/opsec-ee/rtka-u)
-- [arXiv Preprint](https://arxiv.org/abs/XXXX.XXXXX) (forthcoming)
 
 Collaboration and technical feedback are welcome.
 For questions about core development, module integration patterns, or research collaboration opportunities, please contact the author. Note that response times may vary as this is an active research project without dedicated support resources.
