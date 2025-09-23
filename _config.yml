@@ -1,10 +1,19 @@
+# File: _config.yml
 title: RTKA Documentation
 description: Recursive Ternary Knowledge Algorithm
-theme: minima  # Or another Jekyll theme
+baseurl: "/rtka-u"  # Adjust if your repo is not at root (e.g., /rtka-u for opsec-ee.github.io/rtka-u)
+url: "https://opsec-ee.github.io"
+theme: minima  # Reliable default theme
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 markdown: kramdown
 kramdown:
+  input: GFM  # GitHub Flavored Markdown for compatibility
   math_engine: mathjax
+  math_engine_opts:
+    preview: true  # Previews math while editing
+    preview_as_code: true
   syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
