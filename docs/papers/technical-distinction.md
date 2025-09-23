@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Recursive Ternary with Kleene Algorithm + UNKNOWN (RTKA-U) framework represents a mathematically rigorous approach to uncertainty propagation in logical systems. This document clarifies the technical distinctions between RTKA-U and other projects exploring ternary or multi-valued logic systems, particularly those focused on conceptual frameworks or applied ethics rather than formal computational logic.
+The Recursive Ternary Knowledge Algorithm (RTKA) framework represents a mathematically rigorous approach to uncertainty propagation in logical systems. This document clarifies the technical distinctions between RTKA-U and other projects exploring ternary or multi-valued logic systems, particularly those focused on conceptual frameworks or applied ethics rather than formal computational logic.
 
 ## Project Scope and Mathematical Foundation
 
