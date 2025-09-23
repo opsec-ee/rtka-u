@@ -1,7 +1,10 @@
-theme: minima
+title: RTKA Documentation
+description: Recursive Ternary Knowledge Algorithm
+theme: minima  # Or another Jekyll theme
 plugins:
-  - jekyll-katex
-katex:
-  render_options:
-    throw_on_error: false
-    
+  - jekyll-feed
+  - jekyll-seo-tag
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
