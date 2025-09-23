@@ -13,7 +13,7 @@ The framework extends strong three-valued logic through recursive processing of 
 The architecture enables critical services across industries demanding robust handling of uncertainty and incomplete data. This capability proves essential for artificial intelligence systems operating with partial information, sensor fusion networks processing conflicting inputs, and enterprise decision-making platforms where complete information rarely exists. The system provides deterministic processing methods for inherently non-deterministic problems while maintaining mathematical rigor and operational efficiency throughout the decision pipeline.
  
 ## Mathematical Foundation
-[`Mathematical Rigor`](/docs/papers/mathematics.md)
+[`Mathematical Rigor`](/docs/papers/mathematics.html)
 
 The framework transforms classical Boolean logic through recursive ternary evaluation, where uncertainty becomes a branching point for deeper analysis. This creates a fractal decision structure where UNKNOWN states serve as gateways to progressive resolution refinement rather than terminal conditions.
 
