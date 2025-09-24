@@ -6,6 +6,9 @@
 
 By H. Overman ([opsec.ee@pm.me](mailto:opsec.ee@pm.me)) © 2025
 
+Uncertainty doesn't have to be binary or even ternary - it can be infinitely recursive. When faced with MAYBE, instead of stopping, RTKA asks: "What if it's actually false? What if it stays uncertain? What if it's actually true?" - and each of these spawns another complete ternary decision space.
+This is fundamentally different from any known ternary algorithm, which treats their three states as final outcomes rather than gateways to deeper uncertainty resolution.
+
 RTKA represents a mathematically rigorous formal logic framework designed for computational uncertainty reasoning in systems requiring deterministic guarantees. Unlike statistical or machine learning approaches to confidence scoring, this framework implements recursive ternary logic operations with formal proofs and algebraic guarantees for uncertainty propagation. The confidence quantification follows established mathematical principles rather than probabilistic estimates, making it suitable for safety-critical applications in sensor fusion, fault-tolerant systems, and formal verification domains where mathematical correctness remains paramount.
 
 The framework extends strong three-valued logic through recursive processing of ternary truth values represented as T = {-1, 0, 1}, corresponding to FALSE, UNKNOWN, and TRUE states respectively. This mathematical foundation incorporates sophisticated confidence propagation mechanisms that preserve uncertainty throughout the computational pipeline, resolving ambiguity only when logical determination becomes mathematically necessary. The implementation achieves exceptional computational efficiency with O(n) time complexity and O(1) space requirements, suitable for real-time applications in resource-constrained environments.
