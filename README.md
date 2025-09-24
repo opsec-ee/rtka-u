@@ -20,53 +20,18 @@ The framework transforms classical Boolean logic through recursive ternary evalu
 _Uncertainty doesn't have to be binary or even ternary - it can be infinitely recursive. When faced with MAYBE, instead of stopping, RTKA asks: "What if it's actually false? What if it stays uncertain? What if it's actually true?" - and each of these spawns another complete ternary decision space.
 This is fundamentally different from any known ternary algorithm, which treats their three states as final outcomes rather than gateways to deeper uncertainty resolution._
 
-### Core Operations
-
-Operations on the ternary domain T = {-1, 0, 1} follow arithmetic optimization principles derived from strong three-valued logic:
-
-* Negation: ¬a = -a
-* Conjunction: a ∧ b = min(a, b)
-* Disjunction: a ∨ b = max(a, b)
-* Implication: a → b = max(¬a, b)
-* Equivalence: a ↔ b = 1 if a = b, 0 if either is unknown, -1 otherwise
-
-### Recursive Resolution Architecture
-
-The innovation enables UNKNOWN states to branch recursively into new ternary evaluations, creating a fractal decision tree. Each uncertainty node contains three potential paths: resolution to FALSE, continued uncertainty requiring deeper analysis, and resolution to TRUE. This recursive structure enables progressive refinement until sufficient confidence is achieved for decision determination.
-
-### Confidence Propagation System
-
-Confidence values in the interval [0, 1] propagate through operations using enhanced formulas incorporating sigmoid smoothing for conjunction operations and exponential decay for disjunction operations. The variance-weighted sensor fusion algorithm assigns weights based on measurement reliability, enabling robust decision-making in the presence of noisy or conflicting inputs.
-
-### Adaptive Learning Mechanism
-
-The framework employs Bayesian threshold adaptation using Beta distribution parameters that evolve based on decision feedback. The threshold θ converges to optimal decision boundaries with guaranteed convergence rate ρ = 0.9, enabling continuous improvement in decision-making performance over operational time.
-
-### Performance Characteristics
-
-The parallel implementation achieves O(n/p + log p) time complexity with p threads, maintaining O(log n) space complexity for the recursive evaluation stack. Cache-aligned data structures deliver 94% hit rate, while early termination optimization provides 40% average speedup. Error rates remain below 2.1% for Type I and 1.8% for Type II classifications, with unknown resolution rate under 4.7%.
-
-### Fundamental Innovation
-
-Traditional binary logic forces premature decisions under uncertainty. RTKA transforms uncertainty from a limitation into a navigable dimension through its recursive ternary structure:
-
-**Traditional**: TRUE | FALSE | MAYBE (terminal)  
-**RTKA**: TRUE | FALSE | [MAYBE → recursive ternary evaluation]
-
-This architecture enables applications previously impossible with binary logic, including progressive consensus refinement, adaptive sensor fusion with quantified uncertainty, and decision systems that explicitly navigate ambiguity rather than forcing premature resolution.
-
-## Implementation
-
-[`C Implementation`](code/c/rtka_u.c) - Primary implementation with performance optimizations  
-[`Python Implementation`](code/py/rtka_u.py) - Reference implementation and validation suite
-
 ## Documentation and Comparisons
 
 The framework represents a unique contribution to computational logic, distinct from existing approaches to uncertainty reasoning.
 
 [`Historical Context`](docs/papers/rtka-u_foundation.md) - Development history and theoretical foundations  
 [`Technical Distinction`](docs/papers/technical-distinction.md) - Comparison with related systems
-    
+
+## Implementation
+
+[`C Implementation`](code/c/rtka_u.c) - Primary implementation with performance optimizations  
+[`Python Implementation`](code/py/rtka_u.py) - Reference implementation and validation suite
+
 ## Resources
 - [RTKA Algorithms](https://opsec-ee.github.io/rtka-u/docs/index.html)
 - [Technical Documentation](docs/rtka-u.pdf)
