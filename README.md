@@ -12,13 +12,13 @@ The framework extends strong three-valued logic through recursive processing of 
 
 The architecture enables critical services across industries demanding robust handling of uncertainty and incomplete data. This capability proves essential for artificial intelligence systems operating with partial information, sensor fusion networks processing conflicting inputs, and enterprise decision-making platforms where complete information rarely exists. The system provides deterministic processing methods for inherently non-deterministic problems while maintaining mathematical rigor and operational efficiency throughout the decision pipeline.
 
-_Uncertainty doesn't have to be binary or even ternary - it can be infinitely recursive. When faced with MAYBE, instead of stopping, RTKA asks: "What if it's actually false? What if it stays uncertain? What if it's actually true?" - and each of these spawns another complete ternary decision space.
-This is fundamentally different from any known ternary algorithm, which treats their three states as final outcomes rather than gateways to deeper uncertainty resolution._
-
 ## Mathematical Foundation
 [`Mathematical Rigor`](https://opsec-ee.github.io/rtka-u/docs/index.html)
 
 The framework transforms classical Boolean logic through recursive ternary evaluation, where uncertainty becomes a branching point for deeper analysis. This creates a fractal decision structure where UNKNOWN states serve as gateways to progressive resolution refinement rather than terminal conditions.
+
+_Uncertainty doesn't have to be binary or even ternary - it can be infinitely recursive. When faced with MAYBE, instead of stopping, RTKA asks: "What if it's actually false? What if it stays uncertain? What if it's actually true?" - and each of these spawns another complete ternary decision space.
+This is fundamentally different from any known ternary algorithm, which treats their three states as final outcomes rather than gateways to deeper uncertainty resolution._
 
 ### Core Operations
 
