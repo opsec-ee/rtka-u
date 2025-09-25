@@ -24,17 +24,17 @@ This is fundamentally different from any known ternary algorithm, which treats t
 
 The framework represents a unique contribution to computational logic, distinct from existing approaches to uncertainty reasoning.
 
-[`Historical Context`](docs/papers/rtka-u_foundation.md) - Development history and theoretical foundations  
+[`Historical Context`](docs/papers/rtka-foundation.md) - Development history and theoretical foundations  
 [`Technical Distinction`](docs/papers/technical-distinction.md) - Comparison with related systems
 
 ## Implementation
 
-[`C Implementation`](code/c/rtka_u.c) - Primary implementation with performance optimizations  
+[`C Implementation`](code/core/rtka_u.c) - Primary implementation with performance optimizations  
 [`Python Implementation`](code/py/rtka_u.py) - Reference implementation and validation suite
 
 ## Resources
 - [RTKA Algorithms](https://opsec-ee.github.io/rtka-u/docs/index.html)
-- [Technical Documentation](docs/rtka-u.pdf)
+- [Technical Documentation](docs/rtka.pdf)
 
 Collaboration and technical feedback are welcome.
 For questions about core development, module integration patterns, or research collaboration opportunities, please contact the author. Note that response times may vary as this is an active research project without dedicated support resources.
