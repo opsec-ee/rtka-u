@@ -1,5 +1,5 @@
 /**
- * File rtka_u.c
+ * File rtka_is.c
  * Copyright (c) 2025 - H. Overman <opsec.ee@pm.me>
  * DOI: https://doi.org/10.5281/zenodo.17148691
  * ORCHID: https://orcid.org/0009-0007-9737-762X
