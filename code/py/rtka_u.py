@@ -8,7 +8,7 @@ ORCHID: https://orcid.org/0009-0007-9737-762X
 
 This implementation reflects the complete mathematical framework including
 enhanced confidence propagation, adaptive Bayesian thresholds, and
-variance-weighted sensor fusion as documented in (much faster) rtka_u.c
+variance-weighted sensor fusion as documented in (much faster) rtka_is.c
 """
 
 import numpy as np
