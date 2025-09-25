@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-RTKA-U: Recursive Ternary with Kleene Algorithm + UNKNOWN
+RTKA: Recursive Ternary Knowledge Algorithm
 Advanced Python Implementation (v1.3)
 Copyright (c) 2025 - H.Overman <opsec.ee@pm.me>
 DOI: https://doi.org/10.5281/zenodo.17148691
