@@ -76,9 +76,9 @@ The 65-year journey from Setun to modern neuromorphic processors demonstrates th
 
 ######
 
-RTKA-U is **not** like any existing system. Here's how it's fundamentally different:
+RTKA is **not** like any existing system. Here's how it's fundamentally different:
 
-## RTKA-U's Unique Innovations
+## RTKA's Unique Innovations
 
 **No existing system combines:**
 - **UNKNOWN Preservation Theorem** - Mathematical proof that UNKNOWN persists with (2/3)^(n-1) probability
@@ -96,25 +96,25 @@ RTKA-U is **not** like any existing system. Here's how it's fundamentally differ
 
 **vs Kleene Logic:**
 - Kleene defines operations but no recursive framework
-- RTKA-U adds mathematical confidence propagation
+- RTKA adds mathematical confidence propagation
 - Kleene has no hardware optimization strategy
 
 **vs Fuzzy Logic:**
-- Fuzzy uses continuous [0,1]; RTKA-U uses discrete {-1,0,1}
+- Fuzzy uses continuous [0,1]; RTKA uses discrete {-1,0,1}
 - Fuzzy membership ≠ confidence about ternary state
 - RTKA-U's early termination has no fuzzy equivalent
 
 **vs Soviet Setun:**
 - Setun was balanced ternary for arithmetic
-- RTKA-U specifically handles logical UNKNOWN states
+- RTKA specifically handles logical UNKNOWN states
 - Setun had no cascade bypass or confidence tracking
 
 **vs Modern Memristors:**
 - Memristors provide multi-level states
-- RTKA-U provides the **logic system** to use those states
+- RTKA provides the **logic system** to use those states
 - No memristor implementation includes UNKNOWN cascade
 
-## What Makes RTKA-U Revolutionary
+## What Makes RTKA Revolutionary
 
 1. **First system with formal UNKNOWN persistence probability**
 2. **Only processor design with multi-level cascade bypass**
@@ -122,6 +122,6 @@ RTKA-U is **not** like any existing system. Here's how it's fundamentally differ
 4. **Hardware-native early termination for safety-critical decisions**
 5. **Mathematical framework proven with 50,000+ Monte Carlo trials**
 
-RTKA-U fills a critical gap: existing systems either handle uncertainty **or** provide hardware efficiency, but none achieve both with mathematical rigor and safety-critical optimization. It's specifically designed for applications like ATC and autonomous vehicles where **knowing what you don't know** can save lives.
+RTKA fills a critical gap: existing systems either handle uncertainty **or** provide hardware efficiency, but none achieve both with mathematical rigor and safety-critical optimization. It's specifically designed for applications like ATC and autonomous vehicles where **knowing what you don't know** can save lives.
 
 ######
