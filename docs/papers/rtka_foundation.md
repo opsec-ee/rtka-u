@@ -91,7 +91,7 @@ RTKA is **not** like any existing system. Here's how it's fundamentally differen
 
 **vs SQL NULL:**
 - SQL propagates UNKNOWN but has no confidence values
-- RTKA-U tracks confidence alongside ternary state
+- RTKA tracks confidence alongside ternary state
 - SQL can't early-terminate; RTKA-U stops at high-confidence TRUE
 
 **vs Kleene Logic:**
@@ -102,7 +102,7 @@ RTKA is **not** like any existing system. Here's how it's fundamentally differen
 **vs Fuzzy Logic:**
 - Fuzzy uses continuous [0,1]; RTKA uses discrete {-1,0,1}
 - Fuzzy membership ≠ confidence about ternary state
-- RTKA-U's early termination has no fuzzy equivalent
+- RTKA's early termination has no fuzzy equivalent
 
 **vs Soviet Setun:**
 - Setun was balanced ternary for arithmetic
