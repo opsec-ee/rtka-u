@@ -24,7 +24,7 @@ This is fundamentally different from any known ternary algorithm, which treats t
 
 The framework represents a unique contribution to computational logic, distinct from existing approaches to uncertainty reasoning.
 
-[`Historical Context`](docs/papers/rtka-foundation.md) - Development history and theoretical foundations  
+[`Historical Context`](docs/papers/rtka_foundation.md) - Development history and theoretical foundations  
 [`Technical Distinction`](docs/papers/technical-distinction.md) - Comparison with related systems
 
 ## Implementation
