@@ -12,29 +12,31 @@ The framework extends strong three-valued logic through recursive processing of 
 
 The architecture enables critical services across industries demanding robust handling of uncertainty and incomplete data. This capability proves essential for artificial intelligence systems operating with partial information, sensor fusion networks processing conflicting inputs, and enterprise decision-making platforms where complete information rarely exists. The system provides deterministic processing methods for inherently non-deterministic problems while maintaining mathematical rigor and operational efficiency throughout the decision pipeline.
 
+- _"Don't Trust, Verify"_ Jack Dorsey
+
 ## Mathematical Foundation
 [`Mathematical Rigor`](https://opsec-ee.github.io/rtka-u/docs/index.html)
 
 The framework transforms classical Boolean logic through recursive ternary evaluation, where uncertainty becomes a branching point for deeper analysis. This creates a fractal decision structure where UNKNOWN states serve as gateways to progressive resolution refinement rather than terminal conditions.
 
-_Uncertainty doesn't have to be binary or even ternary - it can be infinitely recursive. When faced with MAYBE, instead of stopping, RTKA asks: "What if it's actually false? What if it stays uncertain? What if it's actually true?" - and each of these spawns another complete ternary decision space.
+_Uncertainty doesn't have to be binary or even ternary - it can be infinitely recursive. When faced with MAYBE, instead of stopping, RTKA asks: "What if it's actually false? What if it stays uncertain? What if it's actually true? What if this is fake?" - and each of these spawns another complete ternary decision space.
 This is fundamentally different from any known ternary algorithm, which treats their three states as final outcomes rather than gateways to deeper uncertainty resolution._
 
 ## Documentation and Comparisons
 
 The framework represents a unique contribution to computational logic, distinct from existing approaches to uncertainty reasoning.
 
-[`Historical Context`](docs/papers/rtka-u_foundation.md) - Development history and theoretical foundations  
+[`Historical Context`](docs/papers/rtka_foundation.md) - Development history and theoretical foundations  
 [`Technical Distinction`](docs/papers/technical-distinction.md) - Comparison with related systems
 
 ## Implementation
 
-[`C Implementation`](code/c/rtka_u.c) - Primary implementation with performance optimizations  
+[`C Implementation`](code/core/rtka_core_bridge.c) - Primary implementation with performance optimizations  
 [`Python Implementation`](code/py/rtka_u.py) - Reference implementation and validation suite
 
 ## Resources
 - [RTKA Algorithms](https://opsec-ee.github.io/rtka-u/docs/index.html)
-- [Technical Documentation](docs/rtka-u.pdf)
+- [Technical Documentation](docs/rtka.pdf)
 
 Collaboration and technical feedback are welcome.
 For questions about core development, module integration patterns, or research collaboration opportunities, please contact the author. Note that response times may vary as this is an active research project without dedicated support resources.
