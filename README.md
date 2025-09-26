@@ -29,7 +29,7 @@ The framework represents a unique contribution to computational logic, distinct 
 
 ## Implementation
 
-[`C Implementation`](code/core/rtka_u.c) - Primary implementation with performance optimizations  
+[`C Implementation`](code/core/rtka_core_bridge.c) - Primary implementation with performance optimizations  
 [`Python Implementation`](code/py/rtka_u.py) - Reference implementation and validation suite
 
 ## Resources
