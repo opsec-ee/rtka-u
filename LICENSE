@@ -4,7 +4,7 @@ This work is licensed under the Creative Commons Attribution-NonCommercial-Share
 
 [RTKA] Recursive Ternary Knowledge Algorithm Copyright (c) 2025 H. Overman
 
-Exceptions: rtka_u_core.c and rtka_u_core.h shall not be modified or used without concent from H.Overman 
+Exceptions: rtka_u_core.c, rtka_u_core.h, rtka_types.h and rtka_allocator.h shall not be modified or used without concent from H.Overman 
 
 rtka_core_bridge.c and rtka_bridge.h fall under the following license
 
