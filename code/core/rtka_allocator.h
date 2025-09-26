@@ -7,7 +7,7 @@
  * Optimized memory management for recursive ternary operations
  * Designed for RTKA's specific allocation patterns and performance requirements
  *
- * CHANGELOG:
+ * CHANGELOG: 
  * v1.0.0 - Initial custom allocator implementation
  * - Pool-based allocation for recursive operations
  * - Stack allocator for temporary computations
