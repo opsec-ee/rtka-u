@@ -2,7 +2,7 @@
 """
 RTKA: Recursive Ternary Knowledge Algorithm - Engineering Demonstration
 Copyright (c) 2025 - H.Overman <opsec.ee@pm.me>
-Advanced Python Implementation (v1.3)
+Advanced Recursion Python Implementation (v1.3)
 Copyright (c) 2025 - H.Overman <opsec.ee@pm.me>
 DOI: https://doi.org/10.5281/zenodo.17148691
 ORCHID: https://orcid.org/0009-0007-9737-762X
