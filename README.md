@@ -19,7 +19,7 @@ _"Don't Trust, Verify"_ Jack Dorsey
 
 The framework transforms classical Boolean logic through recursive ternary evaluation, where uncertainty becomes a branching point for deeper analysis. This creates a fractal decision structure where UNKNOWN states serve as gateways to progressive resolution refinement rather than terminal conditions.
 
-_Uncertainty doesn't have to be binary or even ternary - it can be infinitely recursive. When faced with MAYBE, instead of stopping, RTKA asks: "What if it's actually false? What if it stays uncertain? What if it's actually true? What if this is fake?" - and each of these spawns another complete ternary decision space.
+_Uncertainty doesn't have to be binary or even ternary - it can be infinitely recursive. When faced with MAYBE, instead of stopping, RTKA asks: "What if it's actually false? What if it stays uncertain? What if it's actually true?" - and each of these spawns another complete ternary decision space.
 This is fundamentally different from any known ternary algorithm, which treats their three states as final outcomes rather than gateways to deeper uncertainty resolution._
 
 ## Documentation and Comparisons
