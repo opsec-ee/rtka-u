@@ -2,6 +2,10 @@
  * File: rtka_astar.c
  * Copyright (c) 2025 - H.Overman opsec.ee@pm.me
  * 
+ * PROPRIETARY AND CONFIDENTIAL
+ * This file is proprietary to H. Overman and may not be reproduced,
+ * distributed, or used without explicit written permission.
+ *
  * RTKA A* Search Implementation
  * 
  * CHANGELOG:
