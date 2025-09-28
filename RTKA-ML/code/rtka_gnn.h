@@ -2,6 +2,10 @@
  * File: rtka_gnn.h
  * Copyright (c) 2025 - H.Overman opsec.ee@pm.me
  * 
+ * PROPRIETARY AND CONFIDENTIAL
+ * This file is proprietary to H. Overman and may not be reproduced,
+ * distributed, or used without explicit written permission.
+ *
  * RTKA Graph Neural Networks
  */
 
