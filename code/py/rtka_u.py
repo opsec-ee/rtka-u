@@ -5,7 +5,11 @@ Advanced Python Implementation (v1.3)
 Copyright (c) 2025 - H.Overman <opsec.ee@pm.me>
 DOI: https://doi.org/10.5281/zenodo.17148691
 ORCHID: https://orcid.org/0009-0007-9737-762X
-
+ * 
+ * PROPRIETARY AND CONFIDENTIAL
+ * This file is proprietary to H. Overman and may not be reproduced,
+ * distributed, or used without explicit written permission.
+ *
 This implementation reflects the complete mathematical framework including
 enhanced confidence propagation, adaptive Bayesian thresholds, and
 variance-weighted sensor fusion as documented in (much faster) rtka_is.c
