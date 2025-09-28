@@ -13,4 +13,3 @@ _$ gcc -fsanitize=thread -mavx -DPARALLEL_ENABLED rtka_u.c -lpthread -lm -o rtka
 _$ ./rtka_scalar 2>&1 | cat_ \
 _$ ./rtka_parallel 2>&1 | cat_ \
 _$ ./rtka_tsan 2>&1 | cat_
-
