@@ -2,7 +2,7 @@
 ## [RTKA] Recursive Ternary Knowledge Algorithm 
 
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0007--9737--762X-green.svg)](https://orcid.org/0009-0007-9737-762X)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17173499.svg)](https://doi.org/10.5281/zenodo.17173499)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17247081.svg)](https://doi.org/10.5281/zenodo.17247081)
 
 By H. Overman ([opsec.ee@pm.me](mailto:opsec.ee@pm.me)) © 2025
 
@@ -12,7 +12,8 @@ The framework extends strong three-valued logic through recursive processing of 
 
 The architecture enables critical services across industries demanding robust handling of uncertainty and incomplete data. This capability proves essential for artificial intelligence systems operating with partial information, sensor fusion networks processing conflicting inputs, and enterprise decision-making platforms where complete information rarely exists. The system provides deterministic processing methods for inherently non-deterministic problems while maintaining mathematical rigor and operational efficiency throughout the decision pipeline.
 
-_"Don't Trust, Verify"_ Jack Dorsey
+_"Don't Trust, Verify"_ Jack Dorsey \
+_"The most out-of-the-box thinking is realizing you’re trapped in a box created by others"_ Elon Musk
 
 ## Mathematical Foundation
 [`Mathematical Rigor`](https://opsec-ee.github.io/rtka-u/docs/index.html)
@@ -43,7 +44,7 @@ For questions about core development, module integration patterns, or research c
 
 ## License
 
-This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under Dual Licensing. See the [LICENSE](LICENSE) file for details.
 
 _For commercial licensing inquiries, please contact_ opsec.ee@pm.me
 
