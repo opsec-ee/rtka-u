@@ -43,7 +43,7 @@ For questions about core development, module integration patterns, or research c
 
 ## License
 
-This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under Dual Licensing. See the [LICENSE](LICENSE) file for details.
 
 _For commercial licensing inquiries, please contact_ opsec.ee@pm.me
 
