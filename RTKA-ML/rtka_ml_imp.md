@@ -18,10 +18,8 @@ RTKA (Recursive Ternary Knowledge Algorithm) brings a unique ternary logic frame
      - **Confidence Propagation**: Per `rtka_u_core.h`, rules like multiplicative (AND) or inclusion-exclusion (OR) propagate uncertainties through layers, yielding probabilistic gradients for backprop in `layer_backward()`.
    - **Evolutionary Adaptation**: In dynamic AI (e.g., reinforcement learning), populations evolve ternary weights via fitness (accuracy * confidence), with adaptive transitions balancing exploration/exploitation—better for sparse rewards than gradient descent.
 
-#### Example: Ternary CNN for Image Classification
-In vision AI, RTKA replaces binary activations with ternary ones, handling "maybe object" via recursion. Here's an enhanced layer forward pass from `rtka_ml.c`, consolidated with const correctness, vector convergence for batch conf updates, and loop hoisting. No removals; additions for recursive UNKNOWN handling.
-
-
-reference: rtka_ml_vision.c
+#### Example: Ternary CNN for Image Classification \
+reference: rtka_ml_vision.c \
+In vision AI, RTKA replaces binary activations with ternary ones, handling "maybe object" via recursion. an enhanced layer forward pass from `rtka_ml.c`, consolidated with const correctness, vector convergence for batch conf updates, and loop hoisting. No removals; additions for recursive UNKNOWN handling.
 
 RTKA makes ML/AI more resilient to uncertainty, efficient, and adaptive, especially in recursive/hybrid setups.
