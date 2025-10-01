@@ -1,18 +1,7 @@
-# RTKA-U Mathematical Equations Reference
+# RTKA Mathematical Equations Reference
 
 **Copyright (c) 2025 - H.Overman**  
 **Email: opsec.ee@pm.me**
-
----
-
-## CHANGELOG
-- v1.0.0 (2025-09-30): Initial mathematical equations documentation
-  - Core Kleene operations with formal mathematical notation
-  - Assembly language implementations (x86-64)
-  - C language implementations from rtka_u_core
-  - Confidence propagation mathematics
-  - Recursive evaluation formulations
-  - UNKNOWN persistence probability model
 
 ---
 
@@ -678,15 +667,6 @@ a ∨ (a ∧ b) = a
 ¬(a ∧ b) = ¬a ∨ ¬b
 ¬(a ∨ b) = ¬a ∧ ¬b
 ```
-
----
-
-## REFERENCES
-
-Based on formal mathematical framework presented in:
-- rtka-u.tex: "Recursive Ternary Logic with Kleene Operations and UNKNOWN Preservation"
-- rtka_u_core.h/c: Core implementation files
-- Strong Kleene Logic (Kleene, 1952)
 
 ---
 
