@@ -14,7 +14,7 @@ RTKA (Recursive Ternary Knowledge Algorithm) is a specialized framework designed
      - Benefit: In variable environments (e.g., weather-affected outdoor sensors), the system self-improves over time, balancing sensitivity and specificity without manual recalibration.
 
 ### 3. **Performance Optimizations for Real-Time Applications**
-   - Sensor apps often need low-latency processing on edge devices. RTKA incorporates patterns from `opt-patterns-211.md` like SIMD vectorization (e.g., AVX2 for parallel ops), cache-aligned structures, loop unrolling, and branch prediction hints.
+   - Sensor apps often need low-latency processing on edge devices. RTKA incorporates patterns like SIMD vectorization (e.g., AVX2 for parallel ops), cache-aligned structures, loop unrolling, and branch prediction hints.
      - Early termination can cut computation by 40-60% in recursive evaluations.
      - LUTs (Look-Up Tables) for sigmoid and variance weighting speed up common calculations.
    - **Parallelism Support**: In parallel-enabled builds, it uses atomics, mutexes, and potentially NUMA-aware threading for multi-core scaling, making it suitable for high-throughput apps like real-time monitoring in manufacturing lines.
