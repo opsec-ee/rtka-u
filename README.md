@@ -27,7 +27,7 @@ The framework represents a unique contribution to computational logic, distinct 
 
 ## Implementation
 
-[`C Implementation`](code/core/rtka_core_bridge.c) - Primary implementation with performance optimizations  
+[`Sensor Implementation`](RTKA-IS/code/rtka_is.c) - Sensor demonstartion implementation  
 [`Python Implementation`](code/py/rtka_u.py) - Reference implementation and validation suite
 
 ## Resources
