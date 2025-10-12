@@ -10,7 +10,9 @@
  *
  */
 
-/* # Scalar mode
+/* THIS IS A DEMONSTRATION OF SENSOR/S IMPLEMENTATION
+ *
+ * # Scalar mode
  * gcc -O3 -march=native rtka_is.c -lm -o rtka_scalar
 
  * # Parallel mode
