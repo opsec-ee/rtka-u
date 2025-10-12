@@ -5,9 +5,9 @@ This literature review focuses on the foundations and applications of ternary \
 (three-valued) logics, particularly Kleene's three-valued logic, in managing \
 uncertainty, with extensions to multi-valued logics, confidence propagation, \
 and recursive systems. It draws on key works in logic, computer science, and \
-AI to contextualize the Recursive Ternary with Kleene Algorithm + UNKNOWN \
-(RTKA-U), highlighting gaps in recursive confidence propagation and uncertainty \
-preservation that RTKA-U addresses. The review is structured chronologically \
+AI to contextualize the Recursive Ternary Knowledge Algorithm \
+(RTKA), highlighting gaps in recursive confidence propagation and uncertainty \
+preservation that RTKA addresses. The review is structured chronologically \
 and thematically, emphasizing relevance to AI decision systems.
 
 #### Foundations of Three-Valued Logic
