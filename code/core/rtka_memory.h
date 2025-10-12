@@ -5,34 +5,15 @@
  *
  * MIT License
  *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
- *
  * RTKA Memory Management System
  * High-performance allocators optimized for ternary operations
- *
- * CHANGELOG:
- * v1.0.1 - Initial implementation
- * - Pool allocator for states
- * - Stack allocator for temporaries
- * - Ring buffer for cyclic operations
- * - Runtime configuration
  */
 
 #ifndef RTKA_MEMORY_H
 #define RTKA_MEMORY_H
 
 #include "rtka_types.h"
-#include "rtka_u_core.h"
+#include "rtka_core.h"
 
 #ifdef RTKA_C11_AVAILABLE
 #include <stdatomic.h>
@@ -132,21 +113,6 @@ void rtka_memory_reset(rtka_allocator_t* allocator);
 /* RTKA-specific allocations */
 RTKA_NODISCARD
 rtka_state_t* rtka_alloc_state_array(rtka_allocator_t* allocator, uint32_t count);
-
-RTKA_NODISCARD
-rtka_state_t rtka_recursive_and_managed(rtka_allocator_t* temp_allocator,
-                                        const rtka_state_t* states,
-                                        uint32_t count);
-
-RTKA_NODISCARD
-rtka_state_t rtka_recursive_or_managed(rtka_allocator_t* temp_allocator,
-                                       const rtka_state_t* states,
-                                       uint32_t count);
-
-RTKA_NODISCARD
-rtka_state_t rtka_combine_states_managed(rtka_allocator_t* temp_allocator,
-                                         const rtka_state_t* states,
-                                         uint32_t count);
 
 /* Global allocator access */
 RTKA_NODISCARD
