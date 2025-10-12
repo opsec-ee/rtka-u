@@ -3,27 +3,7 @@
  * Copyright (c) 2025 - H.Overman <opsec.ee@pm.me>
  * Email: opsec.ee@pm.me
  *
- * MIT License
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
- *
  * RTKA Memory Management Implementation
- *
- * CHANGELOG:
- * v1.0.1 - Initial implementation
- * - Runtime configurable sizes
- * - Opt-in threading model
- * - Error propagation via results
  */
 
 #include "rtka_memory.h"
@@ -301,33 +281,6 @@ rtka_state_t* rtka_alloc_state_array(rtka_allocator_t* allocator, uint32_t count
 
     size_t total_size = sizeof(rtka_state_t) * count;
     return (rtka_state_t*)rtka_memory_alloc(allocator, total_size);
-}
-
-rtka_state_t rtka_recursive_and_managed(rtka_allocator_t* temp_allocator,
-                                       const rtka_state_t* states,
-                                       uint32_t count) {
-    (void)temp_allocator;
-    if (!states || count == 0U) return rtka_make_state(RTKA_UNKNOWN, 0.0f);
-
-    return rtka_recursive_and_seq(states, count);
-}
-
-rtka_state_t rtka_recursive_or_managed(rtka_allocator_t* temp_allocator,
-                                      const rtka_state_t* states,
-                                      uint32_t count) {
-    (void)temp_allocator;
-    if (!states || count == 0U) return rtka_make_state(RTKA_UNKNOWN, 0.0f);
-
-    return rtka_recursive_or_seq(states, count);
-}
-
-rtka_state_t rtka_combine_states_managed(rtka_allocator_t* temp_allocator,
-                                        const rtka_state_t* states,
-                                        uint32_t count) {
-    (void)temp_allocator;
-    if (!states || count == 0U) return rtka_make_state(RTKA_UNKNOWN, 0.0f);
-
-    return rtka_combine_states(states, count);
 }
 
 /* Global management */
