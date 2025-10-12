@@ -15,7 +15,6 @@
  * v1.0.1 - Initial allocator interface
  * - Type-safe wrappers
  * - Alignment guarantees
- * - Debug mode tracking
  */
 
 #ifndef RTKA_ALLOCATOR_H
