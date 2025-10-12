@@ -1,3 +1,4 @@
+
 /**
  * File: rtka_core_bridge.h
  * Copyright (c) 2025 - H.Overman <opsec.ee@pm.me>
@@ -17,8 +18,8 @@
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
  *
- * RTKA Core Bridge - Unified Interface
- * Bridges proven rtka_u_core with comprehensive type system
+ * RTKA Core Bridge - MIT Licensed Interface
+ * Bridges to proprietary rtka_core with comprehensive type system
  *
  * CHANGELOG:
  * v1.0.1 - Initial bridge implementation
@@ -30,7 +31,7 @@
 #ifndef RTKA_CORE_BRIDGE_H
 #define RTKA_CORE_BRIDGE_H
 
-#include "rtka_u_core.h"
+#include "rtka_core.h"
 #include "rtka_types.h"
 
 /* Compatibility aliases */
@@ -38,7 +39,7 @@
 #define rtka_core_or rtka_or
 #define rtka_core_not rtka_not
 #define rtka_core_equiv rtka_equiv
-#define rtka_core_imply rtka_imply
+#define rtka_core_implies rtka_implies
 
 #define rtka_core_conf_and rtka_conf_and
 #define rtka_core_conf_or rtka_conf_or
@@ -55,10 +56,7 @@ rtka_result_rtka_state_t rtka_safe_and(rtka_state_t lhs, rtka_state_t rhs) {
         return RTKA_ERROR(state, RTKA_ERROR_INVALID_VALUE, "Invalid right operand");
     }
 
-    rtka_state_t result = {
-        .value = rtka_and(lhs.value, rhs.value),
-        .confidence = rtka_conf_and(lhs.confidence, rhs.confidence)
-    };
+    rtka_state_t result = rtka_combine_and(lhs, rhs);
 
     return RTKA_OK(state, result);
 }
@@ -72,10 +70,7 @@ rtka_result_rtka_state_t rtka_safe_or(rtka_state_t lhs, rtka_state_t rhs) {
         return RTKA_ERROR(state, RTKA_ERROR_INVALID_VALUE, "Invalid right operand");
     }
 
-    rtka_state_t result = {
-        .value = rtka_or(lhs.value, rhs.value),
-        .confidence = rtka_conf_or(lhs.confidence, rhs.confidence)
-    };
+    rtka_state_t result = rtka_combine_or(lhs, rhs);
 
     return RTKA_OK(state, result);
 }
@@ -86,10 +81,7 @@ rtka_result_rtka_state_t rtka_safe_not(rtka_state_t operand) {
         return RTKA_ERROR(state, RTKA_ERROR_INVALID_VALUE, "Invalid operand");
     }
 
-    rtka_state_t result = {
-        .value = rtka_not(operand.value),
-        .confidence = rtka_conf_not(operand.confidence)
-    };
+    rtka_state_t result = rtka_combine_not(operand);
 
     return RTKA_OK(state, result);
 }
