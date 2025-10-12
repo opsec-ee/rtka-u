@@ -8,13 +8,13 @@
  * 
  * CHANGELOG v1.0.0:
  * - Initial implementation of core mathematical operations
- * - Activation functions: Sigmoid, ReLU, Softmax (lines 80-100)
- * - Statistical functions: Normal distribution, Z-score, Correlation (lines 105-135)
- * - Distance/Similarity: Cosine similarity, Euclidean distance (lines 140-160)
- * - Loss functions: MSE, Log Loss, R2 Score, F1 Score (lines 165-210)
- * - Information theory: Entropy, KL Divergence (lines 215-235)
- * - Optimization: Gradient descent step (lines 240-255)
- * - Linear algebra interfaces: OLS, SVD, Eigenvalues (lines 260-300)
+ * - Activation functions: Sigmoid, ReLU, Softmax
+ * - Statistical functions: Normal distribution, Z-score, Correlation
+ * - Distance/Similarity: Cosine similarity, Euclidean distance
+ * - Loss functions: MSE, Log Loss, R2 Score, F1 Score
+ * - Information theory: Entropy, KL Divergence
+ * - Optimization: Gradient descent step
+ * - Linear algebra interfaces: OLS, SVD, Eigenvalues
  * 
  * DEPENDENCIES:
  * - Standard C library (math.h, stdlib.h, stdbool.h)
