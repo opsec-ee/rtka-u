@@ -18,7 +18,7 @@
  * - Pure algorithms, no I/O
  */
 
-#include "rtka_u_core.h"
+#include "rtka_u_core_primes.h"
 #include <math.h>
 
 /* Recursive AND with early termination */
