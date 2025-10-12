@@ -17,18 +17,17 @@
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
  *
- * RTKA Core Bridge Implementation
+ * RTKA Core Bridge Implementation - MIT Licensed
  *
- * CHANGELOG:
  * v1.0.1 - Initial implementation
- * - Performance tracking
- * - Module interface
- * - Compatibility testing
+ *   - Performance tracking
+ *   - Module interface
+ *   - Compatibility testing
  */
 
+#include "rtka_core_bridge.h"
 #include "rtka_memory.h"
 #include "rtka_allocator.h"
-#include "rtka_core_bridge.h"
 #include <string.h>
 #include <time.h>
 #include <stdio.h>
@@ -62,10 +61,7 @@ static void release_metrics_lock(void) {}
 static rtka_state_t core_module_and(rtka_state_t lhs, rtka_state_t rhs) {
     clock_t start_time = clock();
 
-    rtka_state_t result = {
-        .value = rtka_and(lhs.value, rhs.value),
-        .confidence = rtka_conf_and(lhs.confidence, rhs.confidence)
-    };
+    rtka_state_t result = rtka_combine_and(lhs, rhs);
 
     clock_t elapsed = clock() - start_time;
 
@@ -81,10 +77,7 @@ static rtka_state_t core_module_and(rtka_state_t lhs, rtka_state_t rhs) {
 static rtka_state_t core_module_or(rtka_state_t lhs, rtka_state_t rhs) {
     clock_t start_time = clock();
 
-    rtka_state_t result = {
-        .value = rtka_or(lhs.value, rhs.value),
-        .confidence = rtka_conf_or(lhs.confidence, rhs.confidence)
-    };
+    rtka_state_t result = rtka_combine_or(lhs, rhs);
 
     clock_t elapsed = clock() - start_time;
 
@@ -100,10 +93,7 @@ static rtka_state_t core_module_or(rtka_state_t lhs, rtka_state_t rhs) {
 static rtka_state_t core_module_not(rtka_state_t operand, rtka_state_t unused) {
     (void)unused;
 
-    rtka_state_t result = {
-        .value = rtka_not(operand.value),
-        .confidence = rtka_conf_not(operand.confidence)
-    };
+    rtka_state_t result = rtka_combine_not(operand);
 
     acquire_metrics_lock();
     g_performance_metrics.operations_count++;
@@ -113,10 +103,7 @@ static rtka_state_t core_module_not(rtka_state_t operand, rtka_state_t unused) {
 }
 
 static rtka_state_t core_module_equiv(rtka_state_t lhs, rtka_state_t rhs) {
-    rtka_state_t result = {
-        .value = rtka_equiv(lhs.value, rhs.value),
-        .confidence = rtka_conf_equiv(lhs.confidence, rhs.confidence)
-    };
+    rtka_state_t result = rtka_combine_equiv(lhs, rhs);
 
     acquire_metrics_lock();
     g_performance_metrics.operations_count++;
@@ -297,7 +284,7 @@ rtka_result_rtka_state_t rtka_recursive_and_safe(const rtka_state_t* states, uin
         }
     }
 
-    rtka_state_t result = rtka_recursive_and_seq(states, count);
+    rtka_state_t result = rtka_recursive_and(states, count);
 
     return RTKA_OK(state, result);
 }
@@ -317,7 +304,7 @@ rtka_result_rtka_state_t rtka_recursive_or_safe(const rtka_state_t* states, uint
         }
     }
 
-    rtka_state_t result = rtka_recursive_or_seq(states, count);
+    rtka_state_t result = rtka_recursive_or(states, count);
 
     return RTKA_OK(state, result);
 }
@@ -363,15 +350,11 @@ bool rtka_bridge_compatibility_test(void) {
 
     for (size_t i = 0U; i < num_test_cases; i++) {
         for (size_t j = 0U; j < num_test_cases; j++) {
-            rtka_state_t rtka_u_result = {
-                .value = rtka_and(test_cases[i].value, test_cases[j].value),
-                .confidence = rtka_conf_and(test_cases[i].confidence, test_cases[j].confidence)
-            };
-
+            rtka_state_t direct_result = rtka_combine_and(test_cases[i], test_cases[j]);
             rtka_state_t bridge_result = core_module_and(test_cases[i], test_cases[j]);
 
-            if (rtka_u_result.value != bridge_result.value) return false;
-            if (fabsf(rtka_u_result.confidence - bridge_result.confidence) > RTKA_CONFIDENCE_EPSILON) return false;
+            if (direct_result.value != bridge_result.value) return false;
+            if (fabsf(direct_result.confidence - bridge_result.confidence) > RTKA_CONFIDENCE_EPSILON) return false;
         }
     }
 
@@ -386,11 +369,10 @@ void rtka_bridge_performance_comparison(void) {
     clock_t start_time = clock();
 
     for (uint32_t i = 0U; i < num_iterations; i++) {
-        (void)rtka_and(test_state_a.value, test_state_b.value);
-        (void)rtka_conf_and(test_state_a.confidence, test_state_b.confidence);
+        (void)rtka_combine_and(test_state_a, test_state_b);
     }
 
-    clock_t u_core_time = clock() - start_time;
+    clock_t direct_time = clock() - start_time;
 
     start_time = clock();
 
@@ -400,12 +382,12 @@ void rtka_bridge_performance_comparison(void) {
 
     clock_t bridge_time = clock() - start_time;
 
-    double u_core_seconds = (double)u_core_time / CLOCKS_PER_SEC;
+    double direct_seconds = (double)direct_time / CLOCKS_PER_SEC;
     double bridge_seconds = (double)bridge_time / CLOCKS_PER_SEC;
-    double overhead_percent = ((bridge_seconds - u_core_seconds) / u_core_seconds) * 100.0;
+    double overhead_percent = ((bridge_seconds - direct_seconds) / direct_seconds) * 100.0;
 
     printf("Performance Comparison:\n");
-    printf("Direct: %.6f seconds\n", u_core_seconds);
+    printf("Direct: %.6f seconds\n", direct_seconds);
     printf("Bridge: %.6f seconds\n", bridge_seconds);
     printf("Overhead: %.2f%%\n", overhead_percent);
 }
