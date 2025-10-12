@@ -10,13 +10,6 @@
  *
  * RTKA Type System and Infrastructure
  * Comprehensive type definitions for all RTKA modules
- *
- * CHANGELOG:
- * v1.0.1 - Initial comprehensive type system
- * - Error handling via Result<T> pattern
- * - Module interface definitions
- * - Extended state types for specialized modules
- * - Performance measurement types
  */
 
 #ifndef RTKA_TYPES_H
