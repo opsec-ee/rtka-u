@@ -3,8 +3,6 @@
  * Copyright (c) 2025 - H.Overman <opsec.ee@pm.me>
  * Email: opsec.ee@pm.me
  *
- * MIT License
- *
  * RTKA Memory Management System
  * High-performance allocators optimized for ternary operations
  */
