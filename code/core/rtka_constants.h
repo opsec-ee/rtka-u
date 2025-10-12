@@ -10,9 +10,6 @@
  *
  * RTKA Global Constants and Configuration
  * Central location for compile-time constants
- *
- * CHANGELOG:
- * v1.0.0 - Initial constants definition
  */
 
 #ifndef RTKA_CONSTANTS_H
