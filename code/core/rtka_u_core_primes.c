@@ -1,5 +1,5 @@
 /**
- * File: rtka_u_core.c
+ * File: rtka_u_core_primes.c
  * Copyright (c) 2025 H. Overman <opsec.ee@pm.me>
  *
  * PROPRIETARY AND CONFIDENTIAL
@@ -8,14 +8,8 @@
  *
  * For licensing inquiries: opsec.ee@pm.me
  *
- * RTKA Core Implementation
+ * RTKA Core Primes Implementation
  * Mathematical operations with proven correctness
- *
- * CHANGELOG:
- * v1.3.1 - Production implementation
- * - Early termination optimization
- * - UNKNOWN preservation verification
- * - Pure algorithms, no I/O
  */
 
 #include "rtka_u_core_primes.h"
