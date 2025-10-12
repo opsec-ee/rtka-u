@@ -64,7 +64,7 @@ rather than discrete ternary.
 
 Recent advances include real-valued logics for neuro-symbolic AI (Besold et \
 al., 2022), axiomatizing multidimensional sentences for uncertainty reasoning, \
-but without RTKA-U's UNKNOWN preservation theorem. In ternary systems, \
+but without RTKA's UNKNOWN preservation theorem. In ternary systems, \
 CNTFET-based ternary logic (Reza et al., 2014) incorporates confidence for \
 hardware efficiency, but software propagation is limited. Symmetric ternary \
 logic (2023) proposes composition methodologies, yet omits recursive confidence \
@@ -86,17 +86,17 @@ encode Kleene logic for AI debate systems, handling uncertainty in multi-agent \
 decisions. Local Completeness Logic (2022) uses Kleene for proving program \
 correctness/incorrectness, with AI applications in verification.
 
-#### Gaps and RTKA-U's Contribution
+#### Gaps and RTKA's Contribution
 
 While foundational works like Kleene (1952) and multi-valued logics (Fitting, \
 1991) establish ternary systems, they lack integrated recursive confidence \
 propagation for decision chains. Recent AI applications (e.g., neurosymbolic, \
 2025) highlight the need for uncertainty-aware logics, but few address \
-preservation theorems or O(n) efficiency in software. RTKA-U fills this gap \
+preservation theorems or O(n) efficiency in software. RTKA fills this gap \
 with recursive ternary operations, confidence decay (e.g., AND product), and \
 UNKNOWN preservation, validated empirically (e.g., (2/3)^{n-1} probability).
 
-This review identifies opportunities for RTKA-U in AI, where uncertainty \
+This review identifies opportunities for RTKA in AI, where uncertainty \
 propagation remains underexplored.
 
 ### References and Citations
@@ -165,7 +165,7 @@ A Survey and Interpretation". *Neuro-Symbolic AI*, 342, 327-361. \
 *Journal of Applied Non-Classical Logics*, 33(2), 121-148. \
 [Taylor & Francis](https://www.tandfonline.com/doi/full/10.1080/11663081.2023.2180312)
 
-**Overman, H. (2025)**. RTKA-U: Recursive Ternary with Kleene Algorithm + UNKNOWN. \
+**Overman, H. (2025)**. RTKA: Recursive Ternary Knowledge Algorithm \
 [Overman](https://doi.org/10.5281/zenodo.17148691)
 
 ### Digital Object Identifiers (DOIs) for Key Papers
@@ -176,4 +176,4 @@ For permanent academic reference, the following DOIs provide stable links:
 * Multi-Valued Model Checking (Chechik): DOI: 10.1145/990010.990014
 * Fuzzy Logic Foundations (Hajek): DOI: 10.1007/978-94-011-5300-3
 * Four-Valued Logic (Belnap): DOI: 10.1007/978-94-010-1161-7_2
-* RTKA-U (Overman)  DOI: 10.5281/zenodo.17148691
+* RTKA (Overman)  DOI: 10.5281/zenodo.17148691
