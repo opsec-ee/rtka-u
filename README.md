@@ -5,7 +5,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17247081.svg)](https://doi.org/10.5281/zenodo.17247081)
 
 By H. Overman ([opsec.ee@pm.me](mailto:opsec.ee@pm.me)) © 2025 \
-_2025-9-06_ \
+
 RTKA _recursive (infinite recursion) ternary, unknown preservation, confidence propagation and early termination_
 
 RTKA represents a mathematically rigorous formal logic framework designed for computational uncertainty reasoning in systems requiring deterministic guarantees. Unlike statistical or machine learning approaches to confidence scoring, this framework implements recursive ternary logic operations with formal proofs and algebraic guarantees for uncertainty propagation. The confidence quantification follows established mathematical principles rather than probabilistic estimates, making it suitable for safety-critical applications in sensor fusion, fault-tolerant systems, and formal verification domains where mathematical correctness remains paramount.
